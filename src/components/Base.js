@@ -12,11 +12,24 @@ const containerVariants = {
     x: 0,
     transition: { type: "spring", delay: 0.5 },
   },
+  exit: {
+    x: "-100vw",
+    transition: { ease: "easeInOut" },
+  },
 };
 
 const nextVariants = {
   hidden: { x: "-100vw" },
   visible: { x: 0, transition: { type: "spring", stiffness: 120 } },
+};
+
+const buttonVariants = {
+  hover: {
+    scale: 1.1,
+    textShadow: "0px 0px 8px rgb(255,255,255)",
+    boxShadow: "0px 0px 8px rgb(255,255,255)",
+    transition: { yoyo: Infinity, duration: 0.3 },
+  },
 };
 
 const Base = ({ addBase, pizza }) => {
@@ -28,6 +41,7 @@ const Base = ({ addBase, pizza }) => {
       variants={containerVariants}
       initial="hidden"
       animate="visible"
+      exit="exit"
     >
       <h3>Step 1: Choose Your Base</h3>
       <ul>
@@ -53,13 +67,7 @@ const Base = ({ addBase, pizza }) => {
           // initial and animate keys are inherited from parent, applied values are from nextVariants
         >
           <Link to="/toppings">
-            <motion.button
-              whileHover={{
-                scale: 1.1,
-                textShadow: "0px 0px 8px rgb(255,255,255)",
-                boxShadow: "0px 0px 8px rgb(255,255,255)",
-              }}
-            >
+            <motion.button variants={buttonVariants} whileHover="hover">
               Next
             </motion.button>
           </Link>
