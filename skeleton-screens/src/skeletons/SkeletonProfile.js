@@ -1,8 +1,10 @@
+import Shimmer from "./Shimmer";
 import SkeletonElement from "./SkeletonElement";
 
-function SkeletonProfile() {
+function SkeletonProfile({ theme }) {
+  const themeClass = theme || "light";
   return (
-    <div className="skeleton-wrapper">
+    <div className={`skeleton-wrapper ${themeClass}`}>
       <div className="skeleton-profile">
         <div>
           <SkeletonElement type="avatar" />
@@ -13,6 +15,7 @@ function SkeletonProfile() {
           <SkeletonElement type="text" />
         </div>
       </div>
+      <Shimmer />
     </div>
   );
 }

@@ -17,7 +17,8 @@ const Articles = () => {
   return (
     <div className="articles">
       <h2>All Articles</h2>
-      {!posts && [1, 2, 3, 4, 5].map((n) => <SkeletonArticle key={n} />)}
+      {!posts &&
+        [1, 2, 3, 4, 5].map((n) => <SkeletonArticle key={n} theme="dark" />)}
       {posts &&
         posts.map((post) => (
           <div className="article" key={post.id}>
