@@ -1,10 +1,11 @@
-# React projects
+# React Projects
 
-This repo is made of 3 projects:
+This repo is made of 4 projects:
 
 1. [**Food Delivery App**](#food): A food delivery app to understand React Framer Motion basics.
 2. [**Star Wars Info**](#starwars): A web app about Star Wars to understand React Query basics.
 3. [**Skeleton Screens**](#skeleton): A small project to learn how to generate content placeholders with React.
+4. [**Material Note**](#materialnote): A note-taking app to discover Material UI framework.
 
 ## <a name="food"></a>1) Food Delivery App
 
@@ -75,3 +76,21 @@ A small project to learn how to generate content placeholders with React.
 - adding a shimmer animation.
 
 Based on [React Skeleton Screen Tutorial](https://www.youtube.com/watch?v=cg_tmJBisp8&list=PL4cUxeGkcC9i6bZhMuAzQpC6YgLmB4k4-) by Shaun Pelling - The Net Ninja (2020).
+
+## <a name="materialnote"></a>4) Material Note
+
+A note-taking app to discover Material-UI framework.
+
+[See material-note folder](https://github.com/solygambas/react-projects/tree/main/material-note)
+
+<!-- <p align="center">
+    <a href="https://github.com/solygambas/react-projects/tree/main/material-note">
+        <img src="material-note/screenshot.png">
+    </a>
+</p> -->
+
+### Features
+
+-
+
+Based on [Material UI Tutorial](https://www.youtube.com/watch?v=0KEpWHtG10M&list=PL4cUxeGkcC9gjxLvV4VEkZ6H6H4yWuS58) by Shaun Pelling - The Net Ninja (2021).
