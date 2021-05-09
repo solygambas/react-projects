@@ -1,11 +1,12 @@
 # React projects
 
-This repo is made of 2 projects:
+This repo is made of 3 projects:
 
 1. [**Food Delivery App**](#food): A food delivery app to understand React Framer Motion basics.
 2. [**Star Wars Info**](#starwars): A web app about Star Wars to understand React Query basics.
+3. [**Skeleton Screens**](#skeleton): A small project to learn how to generate content placeholders.
 
-## <a name="food"></a>1) Food Delivery App - React Framer Motion
+## <a name="food"></a>1) Food Delivery App
 
 A food delivery app to understand React Framer Motion basics.
 
@@ -31,7 +32,7 @@ A food delivery app to understand React Framer Motion basics.
 
 Based on [Framer Motion (for React)](https://www.youtube.com/watch?v=2V1WK-3HQNk&list=PL4cUxeGkcC9iHDnQfTHEVVceOEBsOf07i&index=1) by Shaun Pelling - The Net Ninja (2020).
 
-## <a name="starwars"></a>2) Star Wars Info - React Query
+## <a name="starwars"></a>2) Star Wars Info
 
 A web app about Star Wars to understand React Query basics.
 
@@ -52,3 +53,21 @@ A web app about Star Wars to understand React Query basics.
 - debugging with React Query Devtools.
 
 Based on [React Query Tutorial](https://www.youtube.com/watch?v=x1rQ61otgtU&list=PL4cUxeGkcC9jpi7Ptjl5b50p9gLjOFani) by Shaun Pelling - The Net Ninja (2020).
+
+## <a name="skeleton"></a>3) Skeleton Screens
+
+A small project to learn how to generate content placeholders with React.
+
+[See skeleton-screens folder](https://github.com/solygambas/react-projects/tree/master/skeleton-screens)
+
+<p align="center">
+    <a href="https://github.com/solygambas/react-projects/tree/master/skeleton-screens">
+        <img src="skeleton-screens/screenshot.png">
+    </a>
+</p>
+
+### Features
+
+-
+
+Based on [React Skeleton Screen Tutorial](https://www.youtube.com/watch?v=cg_tmJBisp8&list=PL4cUxeGkcC9i6bZhMuAzQpC6YgLmB4k4-) by Shaun Pelling - The Net Ninja (2020).
