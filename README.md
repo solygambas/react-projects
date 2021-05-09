@@ -10,10 +10,10 @@ This repo is made of 3 projects:
 
 A food delivery app to understand React Framer Motion basics.
 
-[See food-delivery folder](https://github.com/solygambas/react-projects/tree/master/food-delivery)
+[See food-delivery folder](https://github.com/solygambas/react-projects/tree/main/food-delivery)
 
 <p align="center">
-    <a href="https://github.com/solygambas/react-projects/tree/master/food-delivery">
+    <a href="https://github.com/solygambas/react-projects/tree/main/food-delivery">
         <img src="food-delivery/screenshot.png">
     </a>
 </p>
@@ -36,10 +36,10 @@ Based on [Framer Motion (for React)](https://www.youtube.com/watch?v=2V1WK-3HQNk
 
 A web app about Star Wars to understand React Query basics.
 
-[See star-wars folder](https://github.com/solygambas/react-projects/tree/master/star-wars)
+[See star-wars folder](https://github.com/solygambas/react-projects/tree/main/star-wars)
 
 <p align="center">
-    <a href="https://github.com/solygambas/react-projects/tree/master/star-wars">
+    <a href="https://github.com/solygambas/react-projects/tree/main/star-wars">
         <img src="star-wars/screenshot.png">
     </a>
 </p>
@@ -58,10 +58,10 @@ Based on [React Query Tutorial](https://www.youtube.com/watch?v=x1rQ61otgtU&list
 
 A small project to learn how to generate content placeholders with React.
 
-[See skeleton-screens folder](https://github.com/solygambas/react-projects/tree/master/skeleton-screens)
+[See skeleton-screens folder](https://github.com/solygambas/react-projects/tree/main/skeleton-screens)
 
 <p align="center">
-    <a href="https://github.com/solygambas/react-projects/tree/master/skeleton-screens">
+    <a href="https://github.com/solygambas/react-projects/tree/main/skeleton-screens">
         <img src="skeleton-screens/screenshot.png">
     </a>
 </p>
