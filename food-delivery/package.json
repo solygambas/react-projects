@@ -1,5 +1,5 @@
 {
-  "name": "starwars",
+  "name": "food-delivery",
   "version": "0.1.0",
   "repository": {
     "type": "git",
@@ -11,14 +11,14 @@
     "url": "https://github.com/solygambas/react-projects/issues"
   },
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-query": "^3.9.6",
-    "react-scripts": "4.0.2",
-    "web-vitals": "^1.0.1"
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "framer-motion": "^1.11.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -27,10 +27,7 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "extends": "react-app"
   },
   "browserslist": {
     "production": [
