@@ -4,7 +4,7 @@ This repo is made of 3 projects:
 
 1. [**Food Delivery App**](#food): A food delivery app to understand React Framer Motion basics.
 2. [**Star Wars Info**](#starwars): A web app about Star Wars to understand React Query basics.
-3. [**Skeleton Screens**](#skeleton): A small project to learn how to generate content placeholders.
+3. [**Skeleton Screens**](#skeleton): A small project to learn how to generate content placeholders with React.
 
 ## <a name="food"></a>1) Food Delivery App
 
@@ -60,11 +60,11 @@ A small project to learn how to generate content placeholders with React.
 
 [See skeleton-screens folder](https://github.com/solygambas/react-projects/tree/master/skeleton-screens)
 
-<p align="center">
+<!-- <p align="center">
     <a href="https://github.com/solygambas/react-projects/tree/master/skeleton-screens">
         <img src="skeleton-screens/screenshot.png">
     </a>
-</p>
+</p> -->
 
 ### Features
 
