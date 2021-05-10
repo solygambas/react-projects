@@ -1,10 +1,15 @@
 import { useState } from "react";
+import { useHistory } from "react-router-dom";
 import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import TextField from "@material-ui/core/TextField";
+import RadioGroup from "@material-ui/core/RadioGroup";
+import Radio from "@material-ui/core/Radio";
+import FormControl from "@material-ui/core/FormControl";
+import FormLabel from "@material-ui/core/FormLabel";
 import KeyboardArrowRightIcon from "@material-ui/icons/KeyboardArrowRight";
-import { makeStyles } from "@material-ui/core";
+import { FormControlLabel, makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles({
   field: {
@@ -16,10 +21,12 @@ const useStyles = makeStyles({
 
 export default function Create() {
   const classes = useStyles();
+  const history = useHistory();
   const [title, setTitle] = useState("");
   const [details, setDetails] = useState("");
   const [titleError, setTitleError] = useState(false);
   const [detailsError, setDetailsError] = useState(false);
+  const [category, setCategory] = useState("todos");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -33,7 +40,11 @@ export default function Create() {
       setDetailsError(true);
     }
     if (title && details) {
-      console.log(title, details);
+      fetch("http://localhost:8000/notes", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ title, details, category }),
+      }).then(() => history.push("/"));
     }
   };
 
@@ -70,6 +81,22 @@ export default function Create() {
           required
           error={detailsError}
         />
+        <FormControl className={classes.field}>
+          <FormLabel color="secondary">Note Category</FormLabel>
+          <RadioGroup
+            value={category}
+            onChange={(e) => setCategory(e.target.value)}
+          >
+            <FormControlLabel value="money" control={<Radio />} label="Money" />
+            <FormControlLabel value="todos" control={<Radio />} label="Todos" />
+            <FormControlLabel
+              value="reminders"
+              control={<Radio />}
+              label="Reminders"
+            />
+            <FormControlLabel value="work" control={<Radio />} label="Work" />
+          </RadioGroup>
+        </FormControl>
         <Button
           type="submit"
           color="secondary"
