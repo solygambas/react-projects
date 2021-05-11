@@ -8,6 +8,7 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
+import Avatar from "@material-ui/core/Avatar";
 import { AddCircleOutlined, SubjectOutlined } from "@material-ui/icons";
 import { format } from "date-fns";
 
@@ -23,6 +24,9 @@ const useStyles = makeStyles((theme) => {
     },
     date: {
       flexGrow: 1,
+    },
+    avatar: {
+      marginLeft: theme.spacing(2),
     },
     drawer: {
       width: drawerWith,
@@ -70,6 +74,7 @@ function Layout({ children }) {
             Today is the {format(new Date(), "do MMMM Y")}
           </Typography>
           <Typography>Mario</Typography>
+          <Avatar src="/mario-av.png" className={classes.avatar} />
         </Toolbar>
       </AppBar>
       <Drawer
