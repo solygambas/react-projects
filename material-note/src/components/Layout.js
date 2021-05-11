@@ -6,27 +6,43 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
 import { AddCircleOutlined, SubjectOutlined } from "@material-ui/icons";
+import { format } from "date-fns";
 
 const drawerWith = 240;
 
-const useStyles = makeStyles({
-  root: {
-    display: "flex",
-  },
-  drawer: {
-    width: drawerWith,
-  },
-  drawerPaper: {
-    width: drawerWith,
-  },
-  active: {
-    backgroundColor: "f4f4f4",
-  },
-  page: {
-    backgroundColor: "f9f9f9",
-    width: "100%",
-  },
+const useStyles = makeStyles((theme) => {
+  return {
+    root: {
+      display: "flex",
+    },
+    appbar: {
+      width: `calc(100% - ${drawerWith}px)`,
+    },
+    date: {
+      flexGrow: 1,
+    },
+    drawer: {
+      width: drawerWith,
+    },
+    drawerPaper: {
+      width: drawerWith,
+    },
+    title: {
+      padding: theme.spacing(2),
+    },
+    active: {
+      backgroundColor: "f4f4f4",
+    },
+    toolbar: theme.mixins.toolbar,
+    page: {
+      backgroundColor: "f9f9f9",
+      width: "100%",
+      padding: theme.spacing(3),
+    },
+  };
 });
 
 function Layout({ children }) {
@@ -48,6 +64,14 @@ function Layout({ children }) {
   ];
   return (
     <div className={classes.root}>
+      <AppBar className={classes.appbar} elevation={0}>
+        <Toolbar>
+          <Typography className={classes.date}>
+            Today is the {format(new Date(), "do MMMM Y")}
+          </Typography>
+          <Typography>Mario</Typography>
+        </Toolbar>
+      </AppBar>
       <Drawer
         className={classes.drawer}
         variant="permanent"
@@ -55,7 +79,7 @@ function Layout({ children }) {
         classes={{ paper: classes.drawerPaper }}
       >
         <div>
-          <Typography component="h1" variant="h5">
+          <Typography component="h1" variant="h5" className={classes.title}>
             Material Note
           </Typography>
         </div>
@@ -75,7 +99,11 @@ function Layout({ children }) {
           ))}
         </List>
       </Drawer>
-      <div className={classes.page}>{children}</div>
+
+      <div className={classes.page}>
+        <div className={classes.toolbar}></div>
+        {children}
+      </div>
     </div>
   );
 }
