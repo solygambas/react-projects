@@ -2,9 +2,9 @@
 
 A note-taking app to discover Material-UI framework.
 
-<!-- <p align="center">
+<p align="center">
         <img src="material-note/screenshot.png">
-</p> -->
+</p>
 
 ## Features
 

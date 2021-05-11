@@ -83,11 +83,11 @@ A note-taking app to discover Material-UI framework.
 
 [See material-note folder](https://github.com/solygambas/react-projects/tree/main/material-note)
 
-<!-- <p align="center">
+<p align="center">
     <a href="https://github.com/solygambas/react-projects/tree/main/material-note">
         <img src="material-note/screenshot.png">
     </a>
-</p> -->
+</p>
 
 ### Features
 
