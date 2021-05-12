@@ -5,7 +5,7 @@ This repo is made of 4 projects:
 1. [**Food Delivery App**](#food): A food delivery app to understand React Framer Motion basics.
 2. [**Star Wars Info**](#starwars): A web app about Star Wars to understand React Query basics.
 3. [**Skeleton Screens**](#skeleton): A small project to learn how to generate content placeholders with React.
-4. [**Material Note**](#materialnote): A note-taking app to discover Material UI framework.
+4. [**Material Note**](#materialnote): A note-taking app to discover Material-UI framework.
 
 ## <a name="food"></a>1) Food Delivery App
 
