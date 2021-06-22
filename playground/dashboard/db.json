@@ -1,0 +1,52 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "Post One",
+      "body": "This is the post body",
+      "publishedAt": "2020-10-02"
+    },
+    {
+      "id": "2",
+      "title": "Post Two",
+      "body": "This is the post body",
+      "publishedAt": "10-01-2020"
+    },
+    {
+      "id": "3",
+      "title": "Post Three",
+      "body": "This is the post body",
+      "publishedAt": "10-01-2020"
+    },
+    {
+      "title": "Post Four",
+      "body": "This is the body for post 4",
+      "publishedAt": "2020-10-06",
+      "id": "DdCICG7"
+    },
+    {
+      "title": "Post 5",
+      "body": "this is edited post 5",
+      "publishedAt": "2021-06-21",
+      "id": "F5ZfrB0"
+    },
+    {
+      "title": "Post 6",
+      "body": "This is post 6",
+      "publishedAt": "",
+      "id": "mMXPz0M"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "john@example.com"
+    },
+    {
+      "name": "Jessica Fields",
+      "email": "jessicafields@jessica.com",
+      "id": "Z8Y1431"
+    }
+  ]
+}
