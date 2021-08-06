@@ -1,11 +1,12 @@
 # React Projects
 
-This repo is made of 4 projects:
+This repo is made of 5 projects:
 
 1. [**Food Delivery App**](#food): A food delivery app to understand React Framer Motion basics.
 2. [**Star Wars Info**](#starwars): A web app about Star Wars to understand React Query basics.
 3. [**Skeleton Screens**](#skeleton): A small project to learn how to generate content placeholders with React.
 4. [**Material Note**](#materialnote): A note-taking app to discover Material-UI framework.
+5. [**Testing React App**](#testing): A simple project using React Testing Library.
 
 ## <a name="food"></a>1) Food Delivery App
 
@@ -101,3 +102,16 @@ A note-taking app to discover Material-UI framework.
 - styling the grid with React Masonry CSS.
 
 Based on [Material UI Tutorial](https://www.youtube.com/watch?v=0KEpWHtG10M&list=PL4cUxeGkcC9gjxLvV4VEkZ6H6H4yWuS58) by Shaun Pelling - The Net Ninja (2021).
+
+## <a name="testing"></a>5) Testing React App
+
+A simple project using React Testing Library.
+
+[See testing-react-app folder](https://github.com/solygambas/react-projects/tree/main/testing-react-app)
+
+### Features
+
+-
+
+Based on [React Testing Library Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gm4_-5UsNmLqMosM-dzuvQ) by
+Laith Harb for The Net Ninja (2021).
