@@ -9,19 +9,19 @@ import Radio from "@material-ui/core/Radio";
 import FormControl from "@material-ui/core/FormControl";
 import FormLabel from "@material-ui/core/FormLabel";
 import KeyboardArrowRightIcon from "@material-ui/icons/KeyboardArrowRight";
-import { FormControlLabel } from "@material-ui/core";
-import makeStyles from '@material-ui/styles/makeStyles';
+import FormControlLabel from "@material-ui/core/FormControlLabel";
+import { styled } from "@material-ui/core/styles";
 
-const useStyles = makeStyles({
-  field: {
-    marginTop: 20,
-    marginBottom: 20,
-    display: "block",
-  },
-});
+const customStyle = {
+  marginTop: 20,
+  marginBottom: 20,
+  display: "block",
+};
+
+const CustomTextField = styled(TextField)(customStyle);
+const CustomFormControl = styled(FormControl)(customStyle);
 
 export default function Create() {
-  const classes = useStyles();
   const history = useHistory();
   const [title, setTitle] = useState("");
   const [details, setDetails] = useState("");
@@ -60,9 +60,8 @@ export default function Create() {
         Create a New Note
       </Typography>
       <form noValidate autoComplete="off" onSubmit={handleSubmit}>
-        <TextField
+        <CustomTextField
           onChange={(e) => setTitle(e.target.value)}
-          className={classes.field}
           label="Note Title"
           variant="outlined"
           color="secondary"
@@ -70,9 +69,8 @@ export default function Create() {
           required
           error={titleError}
         />
-        <TextField
+        <CustomTextField
           onChange={(e) => setDetails(e.target.value)}
-          className={classes.field}
           label="Details"
           variant="outlined"
           color="secondary"
@@ -82,7 +80,7 @@ export default function Create() {
           required
           error={detailsError}
         />
-        <FormControl className={classes.field}>
+        <CustomFormControl>
           <FormLabel color="secondary">Note Category</FormLabel>
           <RadioGroup
             value={category}
@@ -97,7 +95,7 @@ export default function Create() {
             />
             <FormControlLabel value="work" control={<Radio />} label="Work" />
           </RadioGroup>
-        </FormControl>
+        </CustomFormControl>
         <Button
           type="submit"
           color="secondary"
