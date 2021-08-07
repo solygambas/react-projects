@@ -11,8 +11,11 @@
     "url": "https://github.com/solygambas/react-projects/issues"
   },
   "dependencies": {
-    "@material-ui/core": "^4.11.3",
-    "@material-ui/icons": "^4.11.2",
+    "@emotion/react": "^11.4.0",
+    "@emotion/styled": "^11.3.0",
+    "@material-ui/core": "^5.0.0-beta.2",
+    "@material-ui/icons": "^5.0.0-beta.1",
+    "@material-ui/styles": "^5.0.0-beta.2",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.7.1",
@@ -21,7 +24,7 @@
     "react-dom": "^17.0.1",
     "react-masonry-css": "^1.0.14",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.2",
+    "react-scripts": "^4.0.3",
     "web-vitals": "^1.1.0"
   },
   "scripts": {

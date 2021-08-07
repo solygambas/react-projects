@@ -100,6 +100,7 @@ A note-taking app to discover Material-UI framework.
 - building a layout with a permanent drawer, a menu list and an app bar.
 - displaying avatars for the user and for each note category.
 - styling the grid with React Masonry CSS.
+- migrating from Material-UI v4 to v5.
 
 Based on [Material UI Tutorial](https://www.youtube.com/watch?v=0KEpWHtG10M&list=PL4cUxeGkcC9gjxLvV4VEkZ6H6H4yWuS58) by Shaun Pelling - The Net Ninja (2021).
 

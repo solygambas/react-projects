@@ -2,7 +2,8 @@ import Card from "@material-ui/core/Card";
 import CardHeader from "@material-ui/core/CardHeader";
 import CardContent from "@material-ui/core/CardContent";
 import Avatar from "@material-ui/core/Avatar";
-import { IconButton, makeStyles, Typography } from "@material-ui/core";
+import { IconButton, Typography } from "@material-ui/core";
+import makeStyles from '@material-ui/styles/makeStyles';
 import { DeleteOutlined } from "@material-ui/icons";
 import { blue, green, pink, yellow } from "@material-ui/core/colors";
 
@@ -36,7 +37,7 @@ function NoteCard({ note, handleDelete }) {
           }
           title={note.title}
           action={
-            <IconButton onClick={() => handleDelete(note.id)}>
+            <IconButton onClick={() => handleDelete(note.id)} size="large">
               <DeleteOutlined />
             </IconButton>
           }

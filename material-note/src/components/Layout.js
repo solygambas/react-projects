@@ -1,5 +1,5 @@
 import { useHistory, useLocation } from "react-router-dom";
-import { makeStyles } from "@material-ui/core";
+import makeStyles from '@material-ui/styles/makeStyles';
 import Drawer from "@material-ui/core/Drawer";
 import Typography from "@material-ui/core/Typography";
 import List from "@material-ui/core/List";

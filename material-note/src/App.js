@@ -1,5 +1,9 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { createMuiTheme, ThemeProvider } from "@material-ui/core";
+import {
+  createTheme,
+  ThemeProvider,
+  StyledEngineProvider,
+} from "@material-ui/core/styles";
 
 import Notes from "./pages/Notes";
 import Create from "./pages/Create";
@@ -9,7 +13,7 @@ import Layout from "./components/Layout";
 // see: https://material-ui.com/customization/default-theme/#default-theme
 // https://material-ui.com/customization/color/#color
 
-const theme = createMuiTheme({
+const theme = createTheme({
   palette: {
     primary: {
       main: "#fefefe",
@@ -27,20 +31,22 @@ const theme = createMuiTheme({
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <Router>
-        <Layout>
-          <Switch>
-            <Route exact path="/">
-              <Notes />
-            </Route>
-            <Route path="/create">
-              <Create />
-            </Route>
-          </Switch>
-        </Layout>
-      </Router>
-    </ThemeProvider>
+    <StyledEngineProvider injectFirst>
+      <ThemeProvider theme={theme}>
+        <Router>
+          <Layout>
+            <Switch>
+              <Route exact path="/">
+                <Notes />
+              </Route>
+              <Route path="/create">
+                <Create />
+              </Route>
+            </Switch>
+          </Layout>
+        </Router>
+      </ThemeProvider>
+    </StyledEngineProvider>
   );
 }
 

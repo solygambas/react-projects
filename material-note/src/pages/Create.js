@@ -9,7 +9,8 @@ import Radio from "@material-ui/core/Radio";
 import FormControl from "@material-ui/core/FormControl";
 import FormLabel from "@material-ui/core/FormLabel";
 import KeyboardArrowRightIcon from "@material-ui/icons/KeyboardArrowRight";
-import { FormControlLabel, makeStyles } from "@material-ui/core";
+import { FormControlLabel } from "@material-ui/core";
+import makeStyles from '@material-ui/styles/makeStyles';
 
 const useStyles = makeStyles({
   field: {
