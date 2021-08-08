@@ -1,12 +1,13 @@
 # React Projects
 
-This repo is made of 5 projects:
+This repo is made of 6 projects:
 
 1. [**Food Delivery App**](#food): A food delivery app to understand React Framer Motion basics.
 2. [**Star Wars Info**](#starwars): A web app about Star Wars to understand React Query basics.
 3. [**Skeleton Screens**](#skeleton): A small project to learn how to generate content placeholders with React.
 4. [**Material Note**](#materialnote): A note-taking app to discover Material-UI framework.
 5. [**Testing React App**](#testing): A simple project using React Testing Library.
+6. [**Design System**](#designsystem): An introduction to design systems with styled components and Storybook.
 
 ## <a name="food"></a>1) Food Delivery App
 
@@ -117,3 +118,16 @@ A simple project using React Testing Library.
 
 Based on [React Testing Library Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gm4_-5UsNmLqMosM-dzuvQ) by
 Laith Harb for The Net Ninja (2021).
+
+## <a name="designsystem"></a>6) Design System
+
+An introduction to design systems with styled components and Storybook.
+
+[See design-system folder](https://github.com/solygambas/react-projects/tree/main/design-system)
+
+### Features
+
+-
+
+Based on [Design Systems with Storybook & React](https://frontendmasters.com/workshops/design-systems-storybook/) by
+Emma Bostian (2020).
