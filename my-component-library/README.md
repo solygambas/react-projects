@@ -1,4 +1,4 @@
-# Design System
+# My Component Library
 
 An introduction to design systems with styled components and Storybook.
 
