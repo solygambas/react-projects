@@ -1,5 +1,16 @@
+import PrimaryButton, {
+  SecondaryButton,
+  TertiaryButton,
+} from "./components/Buttons";
+
 function App() {
-  return <h1>Hello World</h1>;
+  return (
+    <>
+      <PrimaryButton>Submit</PrimaryButton>
+      <SecondaryButton>Submit</SecondaryButton>
+      <TertiaryButton>Submit</TertiaryButton>
+    </>
+  );
 }
 
 export default App;
