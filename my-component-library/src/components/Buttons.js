@@ -26,6 +26,12 @@ const BUTTON_MODIFIERS = {
     &:active {
       background-color: ${defaultTheme.status.successColorActive};
     }
+
+    &:disabled {
+      background-color: ${defaultTheme.primaryColorOutline};
+      color: ${defaultTheme.textColor};
+      cursor: not-allowed;
+    }
   `,
   secondaryButtonSuccess: () => `
     background: none;
@@ -52,6 +58,12 @@ const BUTTON_MODIFIERS = {
     &:active {
       background-color: ${defaultTheme.status.warningColorActive};
     }
+
+    &:disabled {
+      background-color: ${defaultTheme.primaryColorOutline};
+      color: ${defaultTheme.textColor};
+      cursor: not-allowed;
+    }
   `,
   secondaryButtonWarning: () => `
     background: none;
@@ -77,6 +89,12 @@ const BUTTON_MODIFIERS = {
 
   &:active {
     background-color: ${defaultTheme.status.errorColorActive};
+  }
+
+  &:disabled {
+    background-color: ${defaultTheme.primaryColorOutline};
+    color: ${defaultTheme.textColor};
+    cursor: not-allowed;
   }
 `,
   secondaryButtonError: () => `
