@@ -1,6 +1,6 @@
 # My Component Library
 
-An introduction to design systems with styled components and Storybook.
+An introduction to design systems with styled components, React Spring and Storybook.
 
 ## Features
 
