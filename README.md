@@ -7,7 +7,7 @@ This repo is made of 6 projects:
 3. [**Skeleton Screens**](#skeleton): A small project to learn how to generate content placeholders with React.
 4. [**Material Note**](#materialnote): A note-taking app to discover Material-UI framework.
 5. [**Testing React App**](#testing): A simple project using React Testing Library.
-6. [**My Component Library**](#designsystem): An introduction to design systems with styled components, React Spring and Storybook.
+6. [**My Component Library**](#designsystem): An introduction to design systems with styled-components, React Spring and Storybook.
 
 ## <a name="food"></a>1) Food Delivery App
 
@@ -121,14 +121,14 @@ Laith Harb for The Net Ninja (2021).
 
 ## <a name="designsystem"></a>6) My Component Library
 
-An introduction to design systems with styled components, React Spring and Storybook.
+An introduction to design systems with styled-components, React Spring and Storybook.
 
 [See my-component-library folder](https://github.com/solygambas/react-projects/tree/main/my-component-library)
 
 ### Features
 
 - creating a design system in Figma for colors, typography and buttons.
-- setting up a custom theme and building buttons with styled components.
+- setting up a custom theme and building buttons with styled-components.
 
 Based on [Design Systems with Storybook & React](https://frontendmasters.com/workshops/design-systems-storybook/) by
 Emma Bostian (2020).

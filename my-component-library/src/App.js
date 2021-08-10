@@ -2,13 +2,15 @@ import PrimaryButton, {
   SecondaryButton,
   TertiaryButton,
 } from "./components/Buttons";
+import { GlobalStyle } from "./utils";
 
 function App() {
   return (
     <>
-      <PrimaryButton>Submit</PrimaryButton>
-      <SecondaryButton>Submit</SecondaryButton>
-      <TertiaryButton>Submit</TertiaryButton>
+      <PrimaryButton disabled>Submit</PrimaryButton>
+      <SecondaryButton disabled>Submit</SecondaryButton>
+      <TertiaryButton disabled>Submit</TertiaryButton>
+      <GlobalStyle />
     </>
   );
 }
