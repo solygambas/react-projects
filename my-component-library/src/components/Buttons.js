@@ -1,10 +1,9 @@
 import styled from "styled-components";
-
-const primaryGreen = "#03A167";
+import { defaultTheme, typeScale } from "../utils/";
 
 const Button = styled.button`
   padding: 12px 24px;
-  font-size: 1rem;
+  font-size: ${typeScale.paragraph};
   border-radius: 2px;
   min-width: 100px;
   cursor: pointer;
@@ -12,19 +11,19 @@ const Button = styled.button`
 `;
 
 const PrimaryButton = styled(Button)`
-  background-color: ${primaryGreen};
+  background-color: ${defaultTheme.primaryColor};
   color: white;
   border: none;
 `;
 
 export const SecondaryButton = styled(Button)`
-  color: ${primaryGreen};
+  color: ${defaultTheme.primaryColor};
   background-color: white;
-  border: 2px solid ${primaryGreen};
+  border: 2px solid ${defaultTheme.primaryColor};
 `;
 
 export const TertiaryButton = styled(Button)`
-  color: ${primaryGreen};
+  color: ${defaultTheme.primaryGreen};
   background-color: white;
   border: none;
 `;
