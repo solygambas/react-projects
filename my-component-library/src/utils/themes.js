@@ -10,6 +10,8 @@ export const defaultTheme = {
   textColorOnPrimary: neutral[100],
   textColor: neutral[600],
   textColorInverted: neutral[100],
+  formElementBackground: neutral[100],
+  textOnFormElementBackground: neutral[600],
   primaryFont,
   status: {
     successColor: green[100],
@@ -33,6 +35,8 @@ export const darkTheme = {
   textColorOnPrimary: greenPrimary[300],
   textColor: neutral[600],
   textColorInverted: neutral[100],
+  formElementBackground: greenPrimary[100],
+  textOnFormElementBackground: neutral[100],
   primaryFont,
   status: {
     successColor: green[100],
