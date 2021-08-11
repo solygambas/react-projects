@@ -1,5 +1,7 @@
-import styled from "styled";
+import styled from "styled-components";
 import { typeScale } from "../utils";
+import { Illustrations, CloseIcon } from "../assets";
+import { PrimaryButton } from "./Buttons";
 
 const ModalWrapper = styled.div`
   width: 800px;
@@ -25,6 +27,32 @@ const SignUpText = styled.p`
   text-align: center;
 `;
 
-export default function Modal() {
-  return <div></div>;
-}
+const CloseModalButton = styled.button`
+  cursor: pointer;
+  background: none;
+  border: none;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+`;
+
+export const SignUpModal = () => {
+  return (
+    <ModalWrapper>
+      <img
+        src={Illustrations.SignUp}
+        alt="Sign up for an account"
+        aria-hidden="true"
+      />
+      <SignUpHeader>Sign Up</SignUpHeader>
+      <SignUpText>Sign up today to get access!</SignUpText>
+      <PrimaryButton>Sign up!</PrimaryButton>
+      <CloseModalButton aria-label="Close modal">
+        <CloseIcon />
+      </CloseModalButton>
+    </ModalWrapper>
+  );
+};

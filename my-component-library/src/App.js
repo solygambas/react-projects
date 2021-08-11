@@ -1,9 +1,6 @@
 import { useState } from "react";
 import { ThemeProvider } from "styled-components";
-import PrimaryButton, {
-  SecondaryButton,
-  TertiaryButton,
-} from "./components/Buttons";
+import { SignUpModal } from "./components";
 import { GlobalStyle, defaultTheme, darkTheme } from "./utils";
 
 function App() {
@@ -22,13 +19,7 @@ function App() {
           justifyContent: "space-around",
         }}
       >
-        <PrimaryButton onClick={() => setUseDarkTheme((prev) => !prev)}>
-          Toggle Dark Theme
-        </PrimaryButton>
-        <PrimaryButton>Submit</PrimaryButton>
-        <SecondaryButton>Submit</SecondaryButton>
-
-        <TertiaryButton>Submit</TertiaryButton>
+        <SignUpModal />
       </div>
       <GlobalStyle />
     </ThemeProvider>
