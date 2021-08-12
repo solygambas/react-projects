@@ -1,7 +1,12 @@
 import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
+import { action } from "@storybook/addon-actions";
 import { PrimaryButton, SecondaryButton, TertiaryButton } from "./Buttons";
 
-<Meta title="Design System|Buttons" component={PrimaryButton} />
+<Meta
+  title="Design System|Buttons"
+  component={PrimaryButton}
+  // argTypes={{ onClick: { action: "clicked" } }}
+/>
 
 # Buttons
 
@@ -17,7 +22,7 @@ Primary buttons are used as a call to action and indicate the most important act
 
 <Canvas>
   <Story name="primary">
-    <PrimaryButton>Hello world</PrimaryButton>
+    <PrimaryButton onClick={action("button-click")}>Hello world</PrimaryButton>
   </Story>
 </Canvas>
 
