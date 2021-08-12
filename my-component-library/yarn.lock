@@ -2767,7 +2767,7 @@
     "core-js" "^3.8.2"
     "ts-dedent" "^2.0.0"
 
-"@storybook/addon-docs@6.3.7":
+"@storybook/addon-docs@^6.3.7", "@storybook/addon-docs@6.3.7":
   "integrity" "sha512-cyuyoLuB5ELhbrXgnZneDCHqNq1wSdWZ4dzdHy1E5WwLPEhLlD6INfEsm8gnDIb4IncYuzMhK3XYBDd7d3ijOg=="
   "resolved" "https://registry.npmjs.org/@storybook/addon-docs/-/addon-docs-6.3.7.tgz"
   "version" "6.3.7"
@@ -4826,6 +4826,16 @@
     "chalk" "^4.0.0"
     "graceful-fs" "^4.2.4"
     "slash" "^3.0.0"
+
+"babel-loader@^8.0.0", "babel-loader@^8.2.2":
+  "integrity" "sha512-JvTd0/D889PQBtUXJ2PXaKU/pjZDMtHA9V2ecm+eNRmmBCMR09a+fmpGTNwnJtFmFl5Ei7Vy47LjBb+L0wQ99g=="
+  "resolved" "https://registry.npmjs.org/babel-loader/-/babel-loader-8.2.2.tgz"
+  "version" "8.2.2"
+  dependencies:
+    "find-cache-dir" "^3.3.1"
+    "loader-utils" "^1.4.0"
+    "make-dir" "^3.1.0"
+    "schema-utils" "^2.6.5"
 
 "babel-loader@8.1.0":
   "integrity" "sha512-7q7nC1tYOrqvUrN3LQK4GwSk/TQorZSOlO9C+RZDZpODgyN4ZlCqE5q9cDsyWOliN+aU9B4JX01xK9eJXowJLw=="
@@ -10622,7 +10632,7 @@
     "pify" "^4.0.1"
     "semver" "^5.6.0"
 
-"make-dir@^3.0.0", "make-dir@^3.0.2":
+"make-dir@^3.0.0", "make-dir@^3.0.2", "make-dir@^3.1.0":
   "integrity" "sha512-g3FeP20LNwhALb/6Cz6Dd4F2ngze0jz7tbzrD2wAV+o9FeNHe4rL+yK2md0J/fiSf1sa1ADhXqi5+oVwOM/eGw=="
   "resolved" "https://registry.npmjs.org/make-dir/-/make-dir-3.1.0.tgz"
   "version" "3.1.0"
