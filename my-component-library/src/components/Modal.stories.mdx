@@ -1,0 +1,28 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
+import { action } from "@storybook/addon-actions";
+import { SignUpModal } from "./Modal";
+
+<Meta
+  title="Design System|Modals"
+  component={SignUpModal}
+  argTypes={{ showModal: { control: "boolean" } }}
+  // argTypes={{ onClick: { action: "clicked" } }}
+/>
+
+# Modals
+
+Modals are used to open forms within a small window.
+
+## Usage
+
+Modals are used to convert visitors into users.
+
+## Sign Up Modal
+
+Sign up Modal is used as a call to action to register new users.
+
+<Canvas>
+  <Story name="signup" args={{ showModal: false }}>
+    {(args) => <SignUpModal showModal={args.showModal} setShowModal={null} />}
+  </Story>
+</Canvas>
