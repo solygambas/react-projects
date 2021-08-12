@@ -5,6 +5,7 @@ import { PrimaryButton, SecondaryButton, TertiaryButton } from "./Buttons";
 <Meta
   title="Design System|Buttons"
   component={PrimaryButton}
+  argTypes={{ disabled: { control: "boolean" } }}
   // argTypes={{ onClick: { action: "clicked" } }}
 />
 
@@ -21,8 +22,12 @@ Buttons are used to trigger internal actions within your web applications.
 Primary buttons are used as a call to action and indicate the most important action on a page.
 
 <Canvas>
-  <Story name="primary">
-    <PrimaryButton onClick={action("button-click")}>Hello world</PrimaryButton>
+  <Story name="primary" args={{ disabled: false }}>
+    {(args) => (
+      <PrimaryButton onClick={action("button-click")} disabled={args.disabled}>
+        Hello world
+      </PrimaryButton>
+    )}
   </Story>
 </Canvas>
 
