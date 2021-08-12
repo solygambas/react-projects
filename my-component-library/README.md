@@ -2,6 +2,8 @@
 
 An introduction to design systems with styled-components, React Spring and Storybook.
 
+[See demo deployed on Vercel](https://my-component-library.vercel.app/)
+
 <p align="center">
         <img src="screenshot.png">
 </p>
@@ -17,7 +19,7 @@ An introduction to design systems with styled-components, React Spring and Story
 - using decorators and creating a context to provide our theme.
 - testing accessibility with @storybook/addon-a11y.
 - customizing Storybook theme with @storybook/addons and @storybook/theming.
-- deploying on Netlify.
+- deploying on Vercel.
 
 Based on [Design Systems with Storybook & React](https://frontendmasters.com/workshops/design-systems-storybook/) by
 Emma Bostian (2020).
