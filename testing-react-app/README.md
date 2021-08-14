@@ -4,7 +4,9 @@ A simple project using React Testing Library.
 
 ## Features
 
--
+- setting up tests with React Testing Library.
+- understanding differences between query methods: getBy, findBy, queryBy, getAllBy, findAllBy, queryAllBy.
+- using attributes by priority to mimic user behavior.
 
 Based on [React Testing Library Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gm4_-5UsNmLqMosM-dzuvQ) by
 Laith Harb for The Net Ninja (2021).
