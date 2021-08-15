@@ -14,10 +14,12 @@ import Header from "../Header";
 
 // GET BY
 
-it("should render title passed into props", () => {
-  render(<Header title="My Header" />);
-  const headingElement = screen.getByText(/my header/i);
-  expect(headingElement).toBeInTheDocument();
+describe("Header", () => {
+  it("should render title passed into props", () => {
+    render(<Header title="My Header" />);
+    const headingElement = screen.getByText(/my header/i);
+    expect(headingElement).toBeInTheDocument();
+  });
 });
 
 // it("should render heading", () => {
