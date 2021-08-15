@@ -114,7 +114,7 @@ A simple project using React Testing Library.
 
 <p align="center">
     <a href="https://github.com/solygambas/react-projects/tree/main/testing-react-app">
-        <img src="testing-react-app/screenshot.png">
+        <img src="testing-react-app/screenshot.jpg">
     </a>
 </p>
 

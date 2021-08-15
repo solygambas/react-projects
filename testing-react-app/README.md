@@ -3,7 +3,7 @@
 A simple project using React Testing Library.
 
 <p align="center">
-        <img src="screenshot.png">
+        <img src="screenshot.jpg">
 </p>
 
 ## Features
