@@ -27,44 +27,44 @@ it("should render title passed into props", () => {
 // });
 
 // with multiple titles
-it("should render heading", () => {
-  render(<Header title="My Header" />);
-  const headingElement = screen.getByRole("heading", { name: "My Header" });
-  expect(headingElement).toBeInTheDocument();
-});
+// it("should render heading", () => {
+//   render(<Header title="My Header" />);
+//   const headingElement = screen.getByRole("heading", { name: "My Header" });
+//   expect(headingElement).toBeInTheDocument();
+// });
 
-it("should get H3 title", () => {
-  render(<Header title="My Header" />);
-  const headingElement = screen.getByTitle("Header");
-  expect(headingElement).toBeInTheDocument();
-});
+// it("should get H3 title", () => {
+//   render(<Header title="My Header" />);
+//   const headingElement = screen.getByTitle("Header");
+//   expect(headingElement).toBeInTheDocument();
+// });
 
-it("should get h1 with data-testid", () => {
-  render(<Header title="My Header" />);
-  const headingElement = screen.getByTestId("header-1");
-  expect(headingElement).toBeInTheDocument();
-});
+// it("should get h1 with data-testid", () => {
+//   render(<Header title="My Header" />);
+//   const headingElement = screen.getByTestId("header-1");
+//   expect(headingElement).toBeInTheDocument();
+// });
 
-// GET ALL BY
+// // GET ALL BY
 
-it("should render 2 headers", () => {
-  render(<Header title="My Header" />);
-  const headingElements = screen.getAllByRole("heading");
-  expect(headingElements.length).toBe(2);
-});
+// it("should render 2 headers", () => {
+//   render(<Header title="My Header" />);
+//   const headingElements = screen.getAllByRole("heading");
+//   expect(headingElements.length).toBe(2);
+// });
 
-// FIND BY
+// // FIND BY
 
-it("should render title passed into props", async () => {
-  render(<Header title="My Header" />);
-  const headingElement = await screen.findByText(/my header/i);
-  expect(headingElement).toBeInTheDocument();
-});
+// it("should render title passed into props", async () => {
+//   render(<Header title="My Header" />);
+//   const headingElement = await screen.findByText(/my header/i);
+//   expect(headingElement).toBeInTheDocument();
+// });
 
-// QUERY BY
+// // QUERY BY
 
-it("should not be rendered as title", () => {
-  render(<Header title="My Header" />);
-  const headingElement = screen.queryByText(/false header/i);
-  expect(headingElement).not.toBeInTheDocument();
-});
+// it("should not be rendered as title", () => {
+//   render(<Header title="My Header" />);
+//   const headingElement = screen.queryByText(/false header/i);
+//   expect(headingElement).not.toBeInTheDocument();
+// });
