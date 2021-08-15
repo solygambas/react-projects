@@ -112,6 +112,12 @@ A simple project using React Testing Library.
 
 [See testing-react-app folder](https://github.com/solygambas/react-projects/tree/main/testing-react-app)
 
+<p align="center">
+    <a href="https://github.com/solygambas/react-projects/tree/main/testing-react-app">
+        <img src="testing-react-app/screenshot.png">
+    </a>
+</p>
+
 ### Features
 
 - setting up tests with React Testing Library.

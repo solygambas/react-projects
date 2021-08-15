@@ -2,6 +2,10 @@
 
 A simple project using React Testing Library.
 
+<p align="center">
+        <img src="screenshot.png">
+</p>
+
 ## Features
 
 - setting up tests with React Testing Library.
