@@ -2,23 +2,23 @@
 
 6 small React projects using React Query, React Framer Motion, React Spring, React Testing Library, Material-UI and Storybook.
 
-| #   | Project                           | Description                                           |
-| --- | --------------------------------- | ----------------------------------------------------- |
-| 01  | [**Food Delivery App**](#food) | A food delivery app to understand React Framer Motion basics.               |
-| 02  | [**Star Wars Info**](#starwars)        | A web app about Star Wars to understand React Query basics.           |
-| 03  | [**Skeleton Screens**](#skeleton)     | A small project to learn how to generate content placeholders with React.                                 |
-| 04  | [**Material Note**](#materialnote)    | A note-taking app to discover Material-UI framework.                     |
-| 05  | [**Testing React App**](#testing)          | A simple project using React Testing Library.                  |
-| 06  | [**My Component Library**](#designsystem)          | An introduction to design systems with styled-components, React Spring and Storybook. |
+| #   | Project                                   | Description                                                                           |
+| --- | ----------------------------------------- | ------------------------------------------------------------------------------------- |
+| 01  | [**Food Delivery App**](#food)            | A food delivery app to understand React Framer Motion basics.                         |
+| 02  | [**Star Wars Info**](#starwars)           | A web app about Star Wars to understand React Query basics.                           |
+| 03  | [**Skeleton Screens**](#skeleton)         | A small project to learn how to generate content placeholders with React.             |
+| 04  | [**Material Note**](#materialnote)        | A note-taking app to discover Material-UI framework.                                  |
+| 05  | [**Testing React App**](#testing)         | A simple project using React Testing Library.                                         |
+| 06  | [**My Component Library**](#designsystem) | An introduction to design systems with styled-components, React Spring and Storybook. |
 
 ## <a name="food"></a>1) Food Delivery App
 
 A food delivery app to understand React Framer Motion basics.
 
-[See food-delivery folder](https://github.com/solygambas/react-projects/tree/main/food-delivery)
+[See food-delivery folder](food-delivery)
 
 <p align="center">
-    <a href="https://github.com/solygambas/react-projects/tree/main/food-delivery">
+    <a href="food-delivery">
         <img src="food-delivery/screenshot.png">
     </a>
 </p>
@@ -41,10 +41,10 @@ Based on [Framer Motion (for React)](https://www.youtube.com/watch?v=2V1WK-3HQNk
 
 A web app about Star Wars to understand React Query basics.
 
-[See star-wars folder](https://github.com/solygambas/react-projects/tree/main/star-wars)
+[See star-wars folder](star-wars)
 
 <p align="center">
-    <a href="https://github.com/solygambas/react-projects/tree/main/star-wars">
+    <a href="star-wars">
         <img src="star-wars/screenshot.png">
     </a>
 </p>
@@ -63,10 +63,10 @@ Based on [React Query Tutorial](https://www.youtube.com/watch?v=x1rQ61otgtU&list
 
 A small project to learn how to generate content placeholders with React.
 
-[See skeleton-screens folder](https://github.com/solygambas/react-projects/tree/main/skeleton-screens)
+[See skeleton-screens folder](skeleton-screens)
 
 <p align="center">
-    <a href="https://github.com/solygambas/react-projects/tree/main/skeleton-screens">
+    <a href="skeleton-screens">
         <img src="skeleton-screens/screenshot.png">
     </a>
 </p>
@@ -85,10 +85,10 @@ Based on [React Skeleton Screen Tutorial](https://www.youtube.com/watch?v=cg_tmJ
 
 A note-taking app to discover Material-UI framework.
 
-[See material-note folder](https://github.com/solygambas/react-projects/tree/main/material-note)
+[See material-note folder](material-note)
 
 <p align="center">
-    <a href="https://github.com/solygambas/react-projects/tree/main/material-note">
+    <a href="material-note">
         <img src="material-note/screenshot.png">
     </a>
 </p>
@@ -112,10 +112,10 @@ Based on [Material UI Tutorial](https://www.youtube.com/watch?v=0KEpWHtG10M&list
 
 A simple project using React Testing Library.
 
-[See testing-react-app folder](https://github.com/solygambas/react-projects/tree/main/testing-react-app)
+[See testing-react-app folder](testing-react-app)
 
 <p align="center">
-    <a href="https://github.com/solygambas/react-projects/tree/main/testing-react-app">
+    <a href="testing-react-app">
         <img src="testing-react-app/screenshot.jpg">
     </a>
 </p>
@@ -138,12 +138,12 @@ Laith Harb for The Net Ninja (2021).
 
 An introduction to design systems with styled-components, React Spring and Storybook.
 
-[See my-component-library folder](https://github.com/solygambas/react-projects/tree/main/my-component-library)
+[See my-component-library folder](my-component-library)
 
 [See demo deployed on Vercel](https://my-component-library.vercel.app/)
 
 <p align="center">
-    <a href="https://github.com/solygambas/react-projects/tree/main/my-component-library">
+    <a href="my-component-library">
         <img src="my-component-library/screenshot.png">
     </a>
 </p>
