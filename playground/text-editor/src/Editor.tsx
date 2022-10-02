@@ -1,4 +1,4 @@
-import { $getRoot, $getSelection } from "lexical";
+import { $getRoot, $getSelection, EditorState } from "lexical";
 import { useEffect } from "react";
 
 import ExampleTheme from "./themes/ExampleTheme";
@@ -8,6 +8,7 @@ import { ContentEditable } from "@lexical/react/LexicalContentEditable";
 import { HistoryPlugin } from "@lexical/react/LexicalHistoryPlugin";
 import { OnChangePlugin } from "@lexical/react/LexicalOnChangePlugin";
 import { useLexicalComposerContext } from "@lexical/react/LexicalComposerContext";
+import { EditorThemeClasses, LexicalEditor } from "lexical/LexicalEditor";
 
 // const theme = {
 //   // Theme styling goes here
@@ -16,7 +17,7 @@ import { useLexicalComposerContext } from "@lexical/react/LexicalComposerContext
 
 // When the editor changes, you can get notified via the
 // LexicalOnChangePlugin!
-function onChange(editorState) {
+function onChange(editorState: EditorState) {
   editorState.read(() => {
     // Read the contents of the EditorState here.
     const root = $getRoot();
@@ -44,12 +45,16 @@ function MyCustomAutoFocusPlugin() {
 // Catch any errors that occur during Lexical updates and log them
 // or throw them as needed. If you don't throw them, Lexical will
 // try to recover gracefully without losing user data.
-function onError(error) {
+function onError(error: Error) {
   console.error(error);
 }
 
-function Editor() {
-  const initialConfig = {
+function Editor(): JSX.Element {
+  const initialConfig: Readonly<{
+    namespace: string;
+    theme?: EditorThemeClasses | undefined;
+    onError: (error: Error, editor: LexicalEditor) => void;
+  }> = {
     namespace: "MyEditor",
     theme: ExampleTheme,
     onError,
