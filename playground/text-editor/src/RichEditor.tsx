@@ -5,7 +5,7 @@ import { RichTextPlugin } from "@lexical/react/LexicalRichTextPlugin";
 import { ContentEditable } from "@lexical/react/LexicalContentEditable";
 import { HistoryPlugin } from "@lexical/react/LexicalHistoryPlugin";
 import { AutoFocusPlugin } from "@lexical/react/LexicalAutoFocusPlugin";
-import DraggableBlockPlugin from "./plugins/DraggableBlockPlugin.tsx";
+import DraggableBlockPlugin from "./plugins/DraggableBlockPlugin";
 import TreeViewPlugin from "./plugins/TreeViewPlugin";
 import ToolbarPlugin from "./plugins/ToolbarPlugin";
 import { HeadingNode, QuoteNode } from "@lexical/rich-text";
@@ -21,16 +21,23 @@ import { TRANSFORMERS } from "@lexical/markdown";
 import ListMaxIndentLevelPlugin from "./plugins/ListMaxIndentLevelPlugin";
 import CodeHighlightPlugin from "./plugins/CodeHighlightPlugin";
 import AutoLinkPlugin from "./plugins/AutoLinkPlugin";
+import { EditorThemeClasses, Klass, LexicalEditor, LexicalNode } from "lexical";
 
 function Placeholder() {
   return <div className="editor-placeholder">Enter some rich text...</div>;
 }
 
-const editorConfig = {
+const initialConfig: Readonly<{
+  namespace: string;
+  theme?: EditorThemeClasses | undefined;
+  onError: (error: Error, editor: LexicalEditor) => void;
+  nodes?: readonly Klass<LexicalNode>[] | undefined;
+}> = {
+  namespace: "MyEditor",
   // The editor theme
   theme: ExampleTheme,
   // Handling of errors during update
-  onError(error) {
+  onError(error: Error) {
     throw error;
   },
   // Any custom nodes go here
@@ -49,16 +56,17 @@ const editorConfig = {
   ],
 };
 
-export default function RichEditor() {
-  const [floatingAnchorElem, setFloatingAnchorElem] = useState(null);
+export default function RichEditor(): JSX.Element {
+  const [floatingAnchorElem, setFloatingAnchorElem] =
+    useState<HTMLDivElement | null>(null);
 
-  const onRef = (_floatingAnchorElem) => {
+  const onRef = (_floatingAnchorElem: HTMLDivElement) => {
     if (_floatingAnchorElem !== null) {
       setFloatingAnchorElem(_floatingAnchorElem);
     }
   };
   return (
-    <LexicalComposer initialConfig={editorConfig}>
+    <LexicalComposer initialConfig={initialConfig}>
       <div className="editor-container">
         <ToolbarPlugin />
         <div className="editor-inner" ref={onRef}>
