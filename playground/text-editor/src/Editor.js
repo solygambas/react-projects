@@ -1,6 +1,7 @@
 import { $getRoot, $getSelection } from "lexical";
 import { useEffect } from "react";
 
+import ExampleTheme from "./themes/ExampleTheme";
 import { LexicalComposer } from "@lexical/react/LexicalComposer";
 import { PlainTextPlugin } from "@lexical/react/LexicalPlainTextPlugin";
 import { ContentEditable } from "@lexical/react/LexicalContentEditable";
@@ -50,7 +51,7 @@ function onError(error) {
 function Editor() {
   const initialConfig = {
     namespace: "MyEditor",
-    theme,
+    theme: ExampleTheme,
     onError,
   };
 
