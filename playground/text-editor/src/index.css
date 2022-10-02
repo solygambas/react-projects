@@ -314,7 +314,7 @@ pre::-webkit-scrollbar-thumb {
 }
 
 .emoji.happysmile {
-  background-image: url(../public/images/emoji/1F642.png);
+  background-image: url(./images/emoji/1F642.png);
 }
 
 .toolbar {
@@ -446,7 +446,7 @@ i.chevron-down {
   display: inline-block;
   height: 8px;
   width: 8px;
-  background-image: url(../public/images/icons/chevron-down.svg);
+  background-image: url(./images/icons/chevron-down.svg);
 }
 
 #block-controls button:hover {
@@ -466,31 +466,31 @@ i.chevron-down {
 }
 
 #block-controls span.block-type.paragraph {
-  background-image: url(../public/images/icons/text-paragraph.svg);
+  background-image: url(./images/icons/text-paragraph.svg);
 }
 
 #block-controls span.block-type.h1 {
-  background-image: url(../public/images/icons/type-h1.svg);
+  background-image: url(./images/icons/type-h1.svg);
 }
 
 #block-controls span.block-type.h2 {
-  background-image: url(../public/images/icons/type-h2.svg);
+  background-image: url(./images/icons/type-h2.svg);
 }
 
 #block-controls span.block-type.quote {
-  background-image: url(../public/images/icons/chat-square-quote.svg);
+  background-image: url(./images/icons/chat-square-quote.svg);
 }
 
 #block-controls span.block-type.ul {
-  background-image: url(../public/images/icons/list-ul.svg);
+  background-image: url(./images/icons/list-ul.svg);
 }
 
 #block-controls span.block-type.ol {
-  background-image: url(../public/images/icons/list-ol.svg);
+  background-image: url(./images/icons/list-ol.svg);
 }
 
 #block-controls span.block-type.code {
-  background-image: url(../public/images/icons/code.svg);
+  background-image: url(./images/icons/code.svg);
 }
 
 .dropdown {
@@ -591,7 +591,7 @@ i.chevron-down {
 }
 
 .link-editor div.link-edit {
-  background-image: url(../public/images/icons/pencil-fill.svg);
+  background-image: url(./images/icons/pencil-fill.svg);
   background-size: 16px;
   background-position: center;
   background-repeat: no-repeat;
@@ -645,81 +645,115 @@ i.chevron-down {
 }
 
 i.undo {
-  background-image: url(../public/images/icons/arrow-counterclockwise.svg);
+  background-image: url(./images/icons/arrow-counterclockwise.svg);
 }
 
 i.redo {
-  background-image: url(../public/images/icons/arrow-clockwise.svg);
+  background-image: url(./images/icons/arrow-clockwise.svg);
 }
 
 .icon.paragraph {
-  background-image: url(../public/images/icons/text-paragraph.svg);
+  background-image: url(./images/icons/text-paragraph.svg);
 }
 
 .icon.large-heading,
 .icon.h1 {
-  background-image: url(../public/images/icons/type-h1.svg);
+  background-image: url(./images/icons/type-h1.svg);
 }
 
 .icon.small-heading,
 .icon.h2 {
-  background-image: url(../public/images/icons/type-h2.svg);
+  background-image: url(./images/icons/type-h2.svg);
 }
 
 .icon.bullet-list,
 .icon.ul {
-  background-image: url(../public/images/icons/list-ul.svg);
+  background-image: url(./images/icons/list-ul.svg);
 }
 
 .icon.numbered-list,
 .icon.ol {
-  background-image: url(../public/images/icons/list-ol.svg);
+  background-image: url(./images/icons/list-ol.svg);
 }
 
 .icon.quote {
-  background-image: url(../public/images/icons/chat-square-quote.svg);
+  background-image: url(./images/icons/chat-square-quote.svg);
 }
 
 .icon.code {
-  background-image: url(../public/images/icons/code.svg);
+  background-image: url(./images/icons/code.svg);
 }
 
 i.bold {
-  background-image: url(../public/images/icons/type-bold.svg);
+  background-image: url(./images/icons/type-bold.svg);
 }
 
 i.italic {
-  background-image: url(../public/images/icons/type-italic.svg);
+  background-image: url(./images/icons/type-italic.svg);
 }
 
 i.underline {
-  background-image: url(../public/images/icons/type-underline.svg);
+  background-image: url(./images/icons/type-underline.svg);
 }
 
 i.strikethrough {
-  background-image: url(../public/images/icons/type-strikethrough.svg);
+  background-image: url(./images/icons/type-strikethrough.svg);
 }
 
 i.code {
-  background-image: url(../public/images/icons/code.svg);
+  background-image: url(./images/icons/code.svg);
 }
 
 i.link {
-  background-image: url(../public/images/icons/link.svg);
+  background-image: url(./images/icons/link.svg);
 }
 
 i.left-align {
-  background-image: url(../public/images/icons/text-left.svg);
+  background-image: url(./images/icons/text-left.svg);
 }
 
 i.center-align {
-  background-image: url(../public/images/icons/text-center.svg);
+  background-image: url(./images/icons/text-center.svg);
 }
 
 i.right-align {
-  background-image: url(../public/images/icons/text-right.svg);
+  background-image: url(./images/icons/text-right.svg);
 }
 
 i.justify-align {
-  background-image: url(../public/images/icons/justify.svg);
+  background-image: url(./images/icons/justify.svg);
+}
+
+.draggable-block-menu {
+  border-radius: 4px;
+  padding: 2px 1px;
+  cursor: grab;
+  position: absolute;
+  left: -10000px;
+  top: -10000px;
+}
+
+.draggable-block-menu .icon {
+  width: 16px;
+  height: 16px;
+  opacity: 0.3;
+  background-image: url(./images/icons/draggable-block-menu.svg);
+}
+
+.draggable-block-menu:active {
+  cursor: grabbing;
+}
+
+.draggable-block-menu:hover {
+  background-color: #efefef;
+}
+
+.draggable-block-target-line {
+  pointer-events: none;
+  background: deepskyblue;
+  height: 4px;
+  position: absolute;
+  left: -10000px;
+  top: -10000px;
+  opacity: 0;
 }

@@ -1,9 +1,11 @@
 import ExampleTheme from "./themes/ExampleTheme";
+import { useState } from "react";
 import { LexicalComposer } from "@lexical/react/LexicalComposer";
 import { RichTextPlugin } from "@lexical/react/LexicalRichTextPlugin";
 import { ContentEditable } from "@lexical/react/LexicalContentEditable";
 import { HistoryPlugin } from "@lexical/react/LexicalHistoryPlugin";
 import { AutoFocusPlugin } from "@lexical/react/LexicalAutoFocusPlugin";
+import DraggableBlockPlugin from "./plugins/DraggableBlockPlugin.tsx";
 import TreeViewPlugin from "./plugins/TreeViewPlugin";
 import ToolbarPlugin from "./plugins/ToolbarPlugin";
 import { HeadingNode, QuoteNode } from "@lexical/rich-text";
@@ -48,11 +50,18 @@ const editorConfig = {
 };
 
 export default function RichEditor() {
+  const [floatingAnchorElem, setFloatingAnchorElem] = useState(null);
+
+  const onRef = (_floatingAnchorElem) => {
+    if (_floatingAnchorElem !== null) {
+      setFloatingAnchorElem(_floatingAnchorElem);
+    }
+  };
   return (
     <LexicalComposer initialConfig={editorConfig}>
       <div className="editor-container">
         <ToolbarPlugin />
-        <div className="editor-inner">
+        <div className="editor-inner" ref={onRef}>
           <RichTextPlugin
             contentEditable={<ContentEditable className="editor-input" />}
             placeholder={<Placeholder />}
@@ -66,6 +75,9 @@ export default function RichEditor() {
           <AutoLinkPlugin />
           <ListMaxIndentLevelPlugin maxDepth={7} />
           <MarkdownShortcutPlugin transformers={TRANSFORMERS} />
+          {floatingAnchorElem && (
+            <DraggableBlockPlugin anchorElem={floatingAnchorElem} />
+          )}
         </div>
       </div>
     </LexicalComposer>
