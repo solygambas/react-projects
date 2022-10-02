@@ -9,10 +9,10 @@ import { HistoryPlugin } from "@lexical/react/LexicalHistoryPlugin";
 import { OnChangePlugin } from "@lexical/react/LexicalOnChangePlugin";
 import { useLexicalComposerContext } from "@lexical/react/LexicalComposerContext";
 
-const theme = {
-  // Theme styling goes here
-  // ...
-};
+// const theme = {
+//   // Theme styling goes here
+//   // ...
+// };
 
 // When the editor changes, you can get notified via the
 // LexicalOnChangePlugin!
