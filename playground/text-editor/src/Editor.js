@@ -56,13 +56,17 @@ function Editor() {
 
   return (
     <LexicalComposer initialConfig={initialConfig}>
-      <PlainTextPlugin
-        contentEditable={<ContentEditable />}
-        placeholder={<div>Enter some text...</div>}
-      />
-      <OnChangePlugin onChange={onChange} />
-      <HistoryPlugin />
-      <MyCustomAutoFocusPlugin />
+      <div className="editor-container">
+        <PlainTextPlugin
+          contentEditable={<ContentEditable className="editor-input" />}
+          placeholder={
+            <div className="editor-placeholder">Enter some text...</div>
+          }
+        />
+        <OnChangePlugin onChange={onChange} />
+        <HistoryPlugin />
+        <MyCustomAutoFocusPlugin />
+      </div>
     </LexicalComposer>
   );
 }

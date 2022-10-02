@@ -4,9 +4,7 @@ function App() {
   return (
     <div>
       <header>
-        <div>
-          <Editor />
-        </div>
+        <Editor />
       </header>
     </div>
   );
