@@ -4,8 +4,9 @@ function App() {
   return (
     <div>
       <header>
-        <Editor />
+        <h1>Plain Text Example</h1>
       </header>
+      <Editor />
     </div>
   );
 }
