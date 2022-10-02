@@ -1,13 +1,14 @@
-import Editor from "./Editor";
+// import Editor from "./Editor";
+import RichEditor from "./RichEditor";
 
 function App() {
   return (
-    <div>
-      <header>
-        <h1>Plain Text Example</h1>
-      </header>
-      <Editor />
-    </div>
+    <>
+      {/* <h1>Plain Text Example</h1> */}
+      {/* <Editor /> */}
+      <h1>Rich Text Editor</h1>
+      <RichEditor />
+    </>
   );
 }
 
