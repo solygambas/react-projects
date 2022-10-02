@@ -11,6 +11,9 @@ body {
 h1 {
   font-size: 24px;
   color: #333;
+}
+
+.main-title {
   text-align: center;
 }
 
