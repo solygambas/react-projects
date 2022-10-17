@@ -1,6 +1,12 @@
-# Intro to Storybook
+# Taskbox
 
 A quick intro to learn to create UI components with React and Storybook.
+
+[See demo deployed on Chromatic](https://634d833943e511bf6506f771-xfbsniscwu.chromatic.com/)
+
+<p align="center">
+        <img src="screenshot.png">
+</p>
 
 ## Features
 
@@ -12,6 +18,7 @@ A quick intro to learn to create UI components with React and Storybook.
 - constructing a screen with a remote API.
 - mocking API services with Mock Service Worker.
 - writing an interaction test.
+- deploying on Chromatic.
 - testing UI components.
 - using the Controls addon.
 
