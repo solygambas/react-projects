@@ -9,7 +9,7 @@ A quick intro to learn to create UI components with React and Storybook.
 - catching accessibility issues.
 - assembling a composite TaskList component.
 - learning how to wire in data with Redux.
-- constructing a screen.
+- constructing a screen with a remote API.
 - testing UI components.
 - using the Controls addon.
 
