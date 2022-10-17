@@ -9,8 +9,8 @@ export default function InboxScreen() {
   const { error } = useSelector((state) => state.taskbox);
 
   useEffect(() => {
-    console.log("run");
     dispatch(fetchTasks());
+    // eslint-disable-next-line
   }, []);
 
   if (error) {

@@ -21,7 +21,7 @@ const MockStore = ({ taskboxState, children }) => (
   <Provider
     store={configureStore({
       reducer: {
-        taskBox: createSlice({
+        taskbox: createSlice({
           name: "taskbox",
           initialState: taskboxState,
           reducers: {
