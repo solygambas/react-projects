@@ -4,7 +4,7 @@ on:
     branches:
       - master
     paths:
-      - /playground/03-storybook-intro/**
+      - /taskbox/**
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -15,4 +15,4 @@ jobs:
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           token: ${{ secrets.GITHUB_TOKEN }}
-          storybookBaseDir: /playground/03-storybook-intro
+          storybookBaseDir: /taskbox

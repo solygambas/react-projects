@@ -1,6 +1,6 @@
 # React Projects
 
-6 small React projects using React Query, React Framer Motion, React Spring, React Testing Library, Material-UI and Storybook.
+7 small React projects using React Query, React Framer Motion, React Spring, React Testing Library, Material-UI and Storybook.
 
 | #   | Project                                   | Description                                                                           |
 | --- | ----------------------------------------- | ------------------------------------------------------------------------------------- |
@@ -10,6 +10,7 @@
 | 04  | [**Material Note**](#materialnote)        | A note-taking app to discover Material-UI framework.                                  |
 | 05  | [**Testing React App**](#testing)         | A simple project using React Testing Library.                                         |
 | 06  | [**My Component Library**](#designsystem) | An introduction to design systems with styled-components, React Spring and Storybook. |
+| 07  | [**Taskbox**](#taskbox)                   | A quick intro to learn to create UI components with React and Storybook.              |
 
 ## <a name="food"></a>1) Food Delivery App
 
@@ -163,3 +164,33 @@ An introduction to design systems with styled-components, React Spring and Story
 
 Based on [Design Systems with Storybook & React](https://frontendmasters.com/workshops/design-systems-storybook/) by
 Emma Bostian (2020).
+
+## <a name="taskbox"></a>7) Taskbox
+
+A quick intro to learn to create UI components with React and Storybook.
+
+[See taskbox folder](taskbox)
+
+[See demo deployed on Chromatic](https://634d833943e511bf6506f771-xfbsniscwu.chromatic.com/)
+
+<p align="center">
+    <a href="taskbox">
+        <img src="taskbox/screenshot.png">
+    </a>
+</p>
+
+### Features
+
+- setting up Storybook with React.
+- building a simple Task component in isolation.
+- catching accessibility issues.
+- assembling a composite TaskList component.
+- learning how to wire in data with Redux.
+- constructing a screen with a remote API.
+- mocking API services with Mock Service Worker.
+- writing an interaction test.
+- deploying on Chromatic.
+- testing UI components.
+- using the Controls addon.
+
+Based on [Storybook for React tutorial](https://storybook.js.org/tutorials/intro-to-storybook/react/en/get-started/) (2022).
