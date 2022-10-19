@@ -13,5 +13,6 @@ A tutorial to learn how to build design systems.
 - setting up Storybook to build and catalog design system components.
 - collaborating with continuous integration and visual review on Chromatic.
 - testing design system appearance, functionality, and accessibility.
+- driving design system adoption with documentation.
 
 Based on [Design Systems for Developers tutorial](https://storybook.js.org/tutorials/design-systems-for-developers/) (2022).
