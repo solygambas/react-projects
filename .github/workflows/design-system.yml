@@ -1,0 +1,21 @@
+name: "Design System Deployment"
+on:
+  push:
+    branches:
+      - "main"
+    paths:
+      - "design-system/**/*"
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: design-system
+    steps:
+      - uses: actions/checkout@v1
+      - run: yarn
+      - uses: chromaui/action@v1
+        with:
+          projectToken: ${{ secrets.DESIGN_SYSTEM_PROJECT_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          workingDir: design-system
