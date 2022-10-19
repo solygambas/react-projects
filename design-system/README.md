@@ -2,7 +2,7 @@
 
 A tutorial to learn how to build design systems.
 
-[See demo deployed on Chromatic](https://634fb5a44afef8aae1b84965-dsvlnfcoid.chromatic.com/)
+[See demo deployed on Chromatic](https://main--634fb5a44afef8aae1b84965.chromatic.com/)
 
 <p align="center">
   <img src="screenshot.png">
