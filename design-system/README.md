@@ -2,6 +2,12 @@
 
 A tutorial to learn how to build design systems.
 
+[See demo deployed on Chromatic](https://634fb5a44afef8aae1b84965-cmykjnfptl.chromatic.com/)
+
+<p align="center">
+  <img src="screenshot.png">
+</p>
+
 ## Features
 
 - setting up Storybook to build and catalog design system components.
