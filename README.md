@@ -1,6 +1,6 @@
 # React Projects
 
-7 small React projects using React Query, React Framer Motion, React Spring, React Testing Library, Material-UI and Storybook.
+8 small React projects using React Query, React Framer Motion, React Spring, React Testing Library, Material-UI and Storybook.
 
 | #   | Project                                   | Description                                                                           |
 | --- | ----------------------------------------- | ------------------------------------------------------------------------------------- |
@@ -11,6 +11,7 @@
 | 05  | [**Testing React App**](#testing)         | A simple project using React Testing Library.                                         |
 | 06  | [**My Component Library**](#designsystem) | An introduction to design systems with styled-components, React Spring and Storybook. |
 | 07  | [**Taskbox**](#taskbox)                   | A quick intro to learn to create UI components with React and Storybook.              |
+| 08  | [**Design System**](#design-system)       | A tutorial to learn how to build design systems.                                      |
 
 ## <a name="food"></a>1) Food Delivery App
 
@@ -135,7 +136,7 @@ A simple project using React Testing Library.
 Based on [React Testing Library Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gm4_-5UsNmLqMosM-dzuvQ) by
 Laith Harb for The Net Ninja (2021).
 
-## <a name="designsystem"></a>6) My Component Library
+## <a name="design-system"></a>6) My Component Library
 
 An introduction to design systems with styled-components, React Spring and Storybook.
 
@@ -171,7 +172,7 @@ A quick intro to learn to create UI components with React and Storybook.
 
 [See taskbox folder](taskbox)
 
-[See demo deployed on Chromatic](https://634d833943e511bf6506f771-xfbsniscwu.chromatic.com/)
+[See demo deployed on Chromatic](https://main--634d833943e511bf6506f771.chromatic.com/)
 
 <p align="center">
     <a href="taskbox">
@@ -194,3 +195,27 @@ A quick intro to learn to create UI components with React and Storybook.
 - using the Controls addon.
 
 Based on [Storybook for React tutorial](https://storybook.js.org/tutorials/intro-to-storybook/react/en/get-started/) (2022).
+
+## <a name="design-system"></a>8) Design System
+
+A tutorial to learn how to build design systems.
+
+[See design-system folder](design-system)
+
+[See demo deployed on Chromatic](https://main--634fb5a44afef8aae1b84965.chromatic.com/)
+
+<p align="center">
+  <a href="design-system">
+        <img src="design-system/screenshot.png">
+  </a>
+</p>
+
+### Features
+
+- setting up Storybook to build and catalog design system components.
+- collaborating with continuous integration and visual review on Chromatic.
+- testing design system appearance, functionality, and accessibility.
+- driving design system adoption with MDX documentation.
+- packaging and importing a design system into other apps.
+
+Based on [Design Systems for Developers tutorial](https://storybook.js.org/tutorials/design-systems-for-developers/) (2022).
