@@ -2,16 +2,16 @@
 
 8 small React projects using React Query, React Framer Motion, React Spring, React Testing Library, Material-UI and Storybook.
 
-| #   | Project                                   | Description                                                                           |
-| --- | ----------------------------------------- | ------------------------------------------------------------------------------------- |
-| 01  | [**Food Delivery App**](#food)            | A food delivery app to understand React Framer Motion basics.                         |
-| 02  | [**Star Wars Info**](#starwars)           | A web app about Star Wars to understand React Query basics.                           |
-| 03  | [**Skeleton Screens**](#skeleton)         | A small project to learn how to generate content placeholders with React.             |
-| 04  | [**Material Note**](#materialnote)        | A note-taking app to discover Material-UI framework.                                  |
-| 05  | [**Testing React App**](#testing)         | A simple project using React Testing Library.                                         |
-| 06  | [**My Component Library**](#designsystem) | An introduction to design systems with styled-components, React Spring and Storybook. |
-| 07  | [**Taskbox**](#taskbox)                   | A quick intro to learn to create UI components with React and Storybook.              |
-| 08  | [**Design System**](#design-system)       | A tutorial to learn how to build design systems.                                      |
+| #   | Project                                       | Description                                                                           |
+| --- | --------------------------------------------- | ------------------------------------------------------------------------------------- |
+| 01  | [**Food Delivery App**](#food)                | A food delivery app to understand React Framer Motion basics.                         |
+| 02  | [**Star Wars Info**](#starwars)               | A web app about Star Wars to understand React Query basics.                           |
+| 03  | [**Skeleton Screens**](#skeleton)             | A small project to learn how to generate content placeholders with React.             |
+| 04  | [**Material Note**](#materialnote)            | A note-taking app to discover Material-UI framework.                                  |
+| 05  | [**Testing React App**](#testing)             | A simple project using React Testing Library.                                         |
+| 06  | [**My Component Library**](#componentlibrary) | An introduction to design systems with styled-components, React Spring and Storybook. |
+| 07  | [**Taskbox**](#taskbox)                       | A quick intro to learn to create UI components with React and Storybook.              |
+| 08  | [**Design System**](#designsystem)            | A tutorial to learn how to build design systems.                                      |
 
 ## <a name="food"></a>1) Food Delivery App
 
@@ -136,7 +136,7 @@ A simple project using React Testing Library.
 Based on [React Testing Library Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gm4_-5UsNmLqMosM-dzuvQ) by
 Laith Harb for The Net Ninja (2021).
 
-## <a name="design-system"></a>6) My Component Library
+## <a name="componentlibrary"></a>6) My Component Library
 
 An introduction to design systems with styled-components, React Spring and Storybook.
 
@@ -196,7 +196,7 @@ A quick intro to learn to create UI components with React and Storybook.
 
 Based on [Storybook for React tutorial](https://storybook.js.org/tutorials/intro-to-storybook/react/en/get-started/) (2022).
 
-## <a name="design-system"></a>8) Design System
+## <a name="designsystem"></a>8) Design System
 
 A tutorial to learn how to build design systems.
 
