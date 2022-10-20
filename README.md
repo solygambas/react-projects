@@ -204,6 +204,8 @@ A tutorial to learn how to build design systems.
 
 [See demo deployed on Chromatic](https://main--634fb5a44afef8aae1b84965.chromatic.com/)
 
+[See package published on NPM](https://www.npmjs.com/package/@solygambas/learnstorybook-design-system)
+
 <p align="center">
   <a href="design-system">
         <img src="design-system/screenshot.png">
