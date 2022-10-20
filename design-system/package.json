@@ -1,7 +1,7 @@
 {
-  "name": "learnstorybook-design-system-template",
+  "name": "@solygambas/learnstorybook-design-system",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
@@ -15,7 +15,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "cross-env BABEL_ENV=production babel src -d dist",
+    "labels": "npm auto create-labels",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
@@ -47,7 +48,16 @@
       }
     ]
   },
-  "babel": {},
+  "babel": {
+    "presets": [
+      [
+        "react-app",
+        {
+          "absoluteRuntime": false
+        }
+      ]
+    ]
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -61,6 +71,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.19.3",
     "@babel/preset-typescript": "^7.18.6",
     "@storybook/addon-a11y": "^6.5.12",
     "@storybook/addon-actions": "^6.5.12",
@@ -75,13 +86,25 @@
     "@storybook/react": "^6.5.12",
     "@storybook/test-runner": "^0.9.0",
     "@storybook/testing-library": "^0.0.13",
+    "auto": "^10.37.6",
     "babel-plugin-named-exports-order": "^0.0.2",
     "chromatic": "^6.10.2",
+    "cross-env": "^7.0.3",
     "jest": "^27.5.1",
     "prettier": "^2.7.1",
     "prop-types": "^15.8.1",
     "webpack": "^5.74.0"
   },
-  "readme": "ERROR: No README data found!",
-  "_id": "learnstorybook-design-system-template@0.1.0"
+  "description": "Storybook design systems tutorial",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solygambas/react-projects.git"
+  },
+  "author": "solygambas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/solygambas/react-projects/issues"
+  },
+  "homepage": "https://github.com/solygambas/react-projects#readme"
 }
