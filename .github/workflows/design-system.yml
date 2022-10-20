@@ -4,13 +4,13 @@ on:
     branches:
       - "main"
     paths:
-      - "design-system/**/*"
+      - "design-system/main-storybook/**/*"
 jobs:
   test:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: design-system
+        working-directory: design-system/main-storybook
     steps:
       - uses: actions/checkout@v1
       - run: yarn
@@ -18,4 +18,4 @@ jobs:
         with:
           projectToken: ${{ secrets.DESIGN_SYSTEM_PROJECT_TOKEN }}
           token: ${{ secrets.GITHUB_TOKEN }}
-          workingDir: design-system
+          workingDir: design-system/main-storybook
