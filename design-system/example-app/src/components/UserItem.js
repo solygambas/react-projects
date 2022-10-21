@@ -1,5 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
+
+import { Avatar } from "@solygambas/learnstorybook-design-system";
 
 const Container = styled.div`
   background: #eee;
@@ -7,21 +9,16 @@ const Container = styled.div`
   padding: 0.5em;
 `;
 
-const Avatar = styled.img`
-  border: 1px solid black;
-  width: 30px;
-  height: 30px;
-  margin-right: 0.5em;
-`;
-
 const Name = styled.span`
   color: #333;
   font-size: 16px;
 `;
 
-export default ({ user: { name, avatarUrl } }) => (
+const UserItem = ({ user: { name, avatarUrl } }) => (
   <Container>
-    <Avatar src={avatarUrl} />
+    <Avatar username={name} src={avatarUrl} />
     <Name>{name}</Name>
   </Container>
 );
+
+export default UserItem;

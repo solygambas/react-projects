@@ -22,4 +22,4 @@ A quick intro to learn to create UI components with React and Storybook.
 - testing UI components.
 - using the Controls addon.
 
-Based on [Storybook for React tutorial](https://storybook.js.org/tutorials/intro-to-storybook/react/en/get-started/) (2022).
+Based on [Storybook for React tutorial](https://storybook.js.org/tutorials/intro-to-storybook/react/en/get-started/) by Chromatic (2022).

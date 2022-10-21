@@ -2,7 +2,7 @@ name: "Design System Deployment"
 on:
   push:
     branches:
-      - "main"
+      - "**"
     paths:
       - "design-system/main-storybook/**/*"
 jobs:

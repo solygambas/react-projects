@@ -194,7 +194,7 @@ A quick intro to learn to create UI components with React and Storybook.
 - testing UI components.
 - using the Controls addon.
 
-Based on [Storybook for React tutorial](https://storybook.js.org/tutorials/intro-to-storybook/react/en/get-started/) (2022).
+Based on [Storybook for React tutorial](https://storybook.js.org/tutorials/intro-to-storybook/react/en/get-started/) by Chromatic (2022).
 
 ## <a name="designsystem"></a>8) Design System
 
@@ -219,5 +219,6 @@ A tutorial to learn how to build design systems.
 - testing design system appearance, functionality, and accessibility.
 - driving design system adoption with MDX documentation.
 - packaging and importing a design system into other apps.
+- adding a new component AvatarList to repeat the workflow.
 
-Based on [Design Systems for Developers tutorial](https://storybook.js.org/tutorials/design-systems-for-developers/) (2022).
+Based on [Design Systems for Developers tutorial](https://storybook.js.org/tutorials/design-systems-for-developers/) by Dominic Nguyen and Tom Coleman (2022).

@@ -7,7 +7,6 @@ export default {
   title: "components/UserItem",
 };
 
-// to copy to pull request
 const Template = (args) => <UserItem {...args} />;
 
 export const Simple = Template.bind({});
