@@ -17,5 +17,6 @@ A tutorial to learn how to build design systems.
 - testing design system appearance, functionality, and accessibility.
 - driving design system adoption with MDX documentation.
 - packaging and importing a design system into other apps.
+- adding a new component AvatarList to repeat the workflow.
 
 Based on [Design Systems for Developers tutorial](https://storybook.js.org/tutorials/design-systems-for-developers/) (2022).
