@@ -1,0 +1,30 @@
+{
+  "name": "vite-storybook",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.0.0-alpha.43",
+    "@storybook/addon-interactions": "^7.0.0-alpha.43",
+    "@storybook/addon-links": "^7.0.0-alpha.43",
+    "@storybook/react": "^7.0.0-alpha.43",
+    "@storybook/react-vite": "^7.0.0-alpha.43",
+    "@storybook/testing-library": "^0.0.13",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.1.0",
+    "storybook": "^7.0.0-alpha.43",
+    "vite": "^3.1.0"
+  }
+}
