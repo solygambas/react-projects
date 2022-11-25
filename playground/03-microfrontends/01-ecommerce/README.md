@@ -1,12 +1,8 @@
-# Microfrontends with React
-
-## Ecommerce
+# Ecommerce
 
 A small project to understand the basics of microfrontends.
 
-[See 01-ecommerce folder](01-ecommerce)
-
-### Features
+## Features
 
 - understanding build-time and run-time integrations.
 - setting up Webpack.
@@ -16,18 +12,5 @@ A small project to understand the basics of microfrontends.
 - scaffolding the cart.
 - using shared modules.
 - consuming remote modules.
-
-## SaaS
-
-A project to learn to link React and Vue apps together.
-
-[See 02-saas folder](02-saas)
-
-### Features
-
-- choosing a architecture based on requirements.
-- setting up Webpack.
-- creating and merging development config.
-- wiring up React.
 
 Based on [Microfrontends with React: A Complete Developer's Guide](https://www.udemy.com/course/microfrontend-course/) by Stephen Grider (2021).
