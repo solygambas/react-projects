@@ -10,5 +10,6 @@
 - scaffolding the container.
 - implementing module federation.
 - scaffolding the cart.
+- using shared modules.
 
 Based on [Microfrontends with React: A Complete Developer's Guide](https://www.udemy.com/course/microfrontend-course/) by Stephen Grider (2021).
