@@ -1,10 +1,11 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 
 import App from "./App";
 
 const mount = (element) => {
-  ReactDOM.render(<App />, element);
+  const root = createRoot(element);
+  root.render(<App />);
 };
 
 if (process.env.NODE_ENV === "development") {

@@ -1,41 +1,41 @@
-import React from 'react';
-import Button from '@material-ui/core/Button';
-import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardHeader from '@material-ui/core/CardHeader';
-import Grid from '@material-ui/core/Grid';
-import StarIcon from '@material-ui/icons/StarBorder';
-import Typography from '@material-ui/core/Typography';
-import Link from '@material-ui/core/Link';
-import { makeStyles } from '@material-ui/core/styles';
-import Container from '@material-ui/core/Container';
-import Box from '@material-ui/core/Box';
-import { Link as RouterLink } from 'react-router-dom';
+import React from "react";
+import Button from "@mui/material/Button";
+import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import CardHeader from "@mui/material/CardHeader";
+import Grid from "@mui/material/Grid";
+import StarIcon from "@mui/icons-material/StarBorder";
+import Typography from "@mui/material/Typography";
+import Link from "@mui/material/Link";
+import { makeStyles } from "@mui/styles";
+import Container from "@mui/material/Container";
+import Box from "@mui/material/Box";
+import { Link as RouterLink } from "react-router-dom";
 
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
+      {"Copyright © "}
       <Link color="inherit" href="https://material-ui.com/">
         Your Website
-      </Link>{' '}
+      </Link>{" "}
       {new Date().getFullYear()}
-      {'.'}
+      {"."}
     </Typography>
   );
 }
 
 const useStyles = makeStyles((theme) => ({
-  '@global': {
+  "@global": {
     ul: {
       margin: 0,
       padding: 0,
-      listStyle: 'none',
+      listStyle: "none",
     },
   },
   toolbar: {
-    flexWrap: 'wrap',
+    flexWrap: "wrap",
   },
   toolbarTitle: {
     flexGrow: 1,
@@ -48,14 +48,14 @@ const useStyles = makeStyles((theme) => ({
   },
   cardHeader: {
     backgroundColor:
-      theme.palette.type === 'light'
+      theme.palette.type === "light"
         ? theme.palette.grey[200]
         : theme.palette.grey[700],
   },
   cardPricing: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'baseline',
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "baseline",
     marginBottom: theme.spacing(2),
   },
   footer: {
@@ -63,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(8),
     paddingTop: theme.spacing(3),
     paddingBottom: theme.spacing(3),
-    [theme.breakpoints.up('sm')]: {
+    [theme.breakpoints.up("sm")]: {
       paddingTop: theme.spacing(6),
       paddingBottom: theme.spacing(6),
     },
@@ -72,70 +72,70 @@ const useStyles = makeStyles((theme) => ({
 
 const tiers = [
   {
-    title: 'Free',
-    price: '0',
+    title: "Free",
+    price: "0",
     description: [
-      '10 users included',
-      '2 GB of storage',
-      'Help center access',
-      'Email support',
+      "10 users included",
+      "2 GB of storage",
+      "Help center access",
+      "Email support",
     ],
-    buttonText: 'Sign up for free',
-    buttonVariant: 'outlined',
+    buttonText: "Sign up for free",
+    buttonVariant: "outlined",
   },
   {
-    title: 'Pro',
-    subheader: 'Most popular',
-    price: '15',
+    title: "Pro",
+    subheader: "Most popular",
+    price: "15",
     description: [
-      '20 users included',
-      '10 GB of storage',
-      'Help center access',
-      'Priority email support',
+      "20 users included",
+      "10 GB of storage",
+      "Help center access",
+      "Priority email support",
     ],
-    buttonText: 'Get started',
-    buttonVariant: 'contained',
+    buttonText: "Get started",
+    buttonVariant: "contained",
   },
   {
-    title: 'Enterprise',
-    price: '30',
+    title: "Enterprise",
+    price: "30",
     description: [
-      '50 users included',
-      '30 GB of storage',
-      'Help center access',
-      'Phone & email support',
+      "50 users included",
+      "30 GB of storage",
+      "Help center access",
+      "Phone & email support",
     ],
-    buttonText: 'Contact us',
-    buttonVariant: 'outlined',
+    buttonText: "Contact us",
+    buttonVariant: "outlined",
   },
 ];
 const footers = [
   {
-    title: 'Company',
-    description: ['Team', 'History', 'Contact us', 'Locations'],
+    title: "Company",
+    description: ["Team", "History", "Contact us", "Locations"],
   },
   {
-    title: 'Features',
+    title: "Features",
     description: [
-      'Cool stuff',
-      'Random feature',
-      'Team feature',
-      'Developer stuff',
-      'Another one',
+      "Cool stuff",
+      "Random feature",
+      "Team feature",
+      "Developer stuff",
+      "Another one",
     ],
   },
   {
-    title: 'Resources',
+    title: "Resources",
     description: [
-      'Resource',
-      'Resource name',
-      'Another resource',
-      'Final resource',
+      "Resource",
+      "Resource name",
+      "Another resource",
+      "Final resource",
     ],
   },
   {
-    title: 'Legal',
-    description: ['Privacy policy', 'Terms of use'],
+    title: "Legal",
+    description: ["Privacy policy", "Terms of use"],
   },
 ];
 
@@ -175,16 +175,16 @@ export default function Pricing() {
               item
               key={tier.title}
               xs={12}
-              sm={tier.title === 'Enterprise' ? 12 : 6}
+              sm={tier.title === "Enterprise" ? 12 : 6}
               md={4}
             >
               <Card>
                 <CardHeader
                   title={tier.title}
                   subheader={tier.subheader}
-                  titleTypographyProps={{ align: 'center' }}
-                  subheaderTypographyProps={{ align: 'center' }}
-                  action={tier.title === 'Pro' ? <StarIcon /> : null}
+                  titleTypographyProps={{ align: "center" }}
+                  subheaderTypographyProps={{ align: "center" }}
+                  action={tier.title === "Pro" ? <StarIcon /> : null}
                   className={classes.cardHeader}
                 />
                 <CardContent>
