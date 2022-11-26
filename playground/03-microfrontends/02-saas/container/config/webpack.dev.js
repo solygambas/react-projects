@@ -7,7 +7,7 @@ const packageJson = require("../package.json");
 const devConfig = {
   mode: "development",
   devServer: {
-    port: 8081,
+    port: 8080,
     historyApiFallback: {
       index: "index.html",
     },
@@ -15,10 +15,9 @@ const devConfig = {
   devtool: "eval-cheap-source-map",
   plugins: [
     new ModuleFederationPlugin({
-      name: "marketing",
-      filename: "remoteEntry.js",
-      exposes: {
-        "./MarketingApp": "./src/bootstrap",
+      name: "container",
+      remotes: {
+        marketing: "marketing@http://localhost:8081/remoteEntry.js",
       },
       shared: packageJson.dependencies,
       // shared: {

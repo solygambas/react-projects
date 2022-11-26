@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
   },
   cardHeader: {
     backgroundColor:
-      theme.palette.type === "light"
+      theme.palette.mode === "light"
         ? theme.palette.grey[200]
         : theme.palette.grey[700],
   },
@@ -226,7 +226,7 @@ export default function Pricing() {
       </Container>
       {/* Footer */}
       <Container maxWidth="md" component="footer" className={classes.footer}>
-        <Grid container spacing={4} justify="space-evenly">
+        <Grid container spacing={4} justifyContent="space-evenly">
           {footers.map((footer) => (
             <Grid item xs={6} sm={3} key={footer.title}>
               <Typography variant="h6" color="textPrimary" gutterBottom>
