@@ -1,4 +1,6 @@
-# Microfrontends with React
+# Microfrontends
+
+A microfrontend architecture using React, Vue and Webpack.
 
 ## Ecommerce
 

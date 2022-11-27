@@ -1,6 +1,6 @@
 # React Projects
 
-8 small React projects using React Query, React Framer Motion, React Spring, React Testing Library, Material-UI and Storybook.
+9 small React projects using React Query, React Framer Motion, React Spring, React Testing Library, Material-UI and Storybook.
 
 | #   | Project                                       | Description                                                                           |
 | --- | --------------------------------------------- | ------------------------------------------------------------------------------------- |
@@ -12,6 +12,7 @@
 | 06  | [**My Component Library**](#componentlibrary) | An introduction to design systems with styled-components, React Spring and Storybook. |
 | 07  | [**Taskbox**](#taskbox)                       | A quick intro to learn to create UI components with React and Storybook.              |
 | 08  | [**Design System**](#designsystem)            | A tutorial to learn how to build design systems.                                      |
+| 09  | [**Microfrontends**](#microfrontends)         | A microfrontend architecture using React, Vue and Webpack.                            |
 
 ## <a name="food"></a>1) Food Delivery App
 
@@ -222,3 +223,42 @@ A tutorial to learn how to build design systems.
 - adding a new component AvatarList to repeat the workflow.
 
 Based on [Design Systems for Developers tutorial](https://storybook.js.org/tutorials/design-systems-for-developers/) by Dominic Nguyen and Tom Coleman (2022).
+
+## <a name="microfrontends"></a>9) Microfrontends
+
+A microfrontend architecture using React, Vue and Webpack.
+
+### Ecommerce
+
+A small project to understand the basics of microfrontends.
+
+[See microfrontends/01-ecommerce folder](microfrontends/01-ecommerce)
+
+#### Features
+
+- understanding build-time and run-time integrations.
+- setting up Webpack.
+- generating products with Faker.
+- scaffolding the container.
+- implementing module federation.
+- scaffolding the cart.
+- using shared modules.
+- consuming remote modules.
+
+## SaaS
+
+A project to learn to link React and Vue apps together.
+
+[See microfrontends/02-saas folder](microfrontends/02-saas)
+
+### Features
+
+- choosing a architecture based on requirements.
+- setting up Webpack for development and production.
+- creating and merging development config.
+- wiring up React.
+- assembling the App component and the Container.
+- integrating the Marketing App with the mount function.
+- delegating shared module selection.
+
+Based on [Microfrontends with React: A Complete Developer's Guide](https://www.udemy.com/course/microfrontend-course/) by Stephen Grider (2021).
