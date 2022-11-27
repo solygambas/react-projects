@@ -6,10 +6,10 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-import { makeStyles } from "@mui/styles";
 import Container from "@mui/material/Container";
 import MaterialLink from "@mui/material/Link";
 import { Link } from "react-router-dom";
+import Box from "@mui/material/Box";
 
 function Copyright() {
   return (
@@ -23,54 +23,23 @@ function Copyright() {
     </Typography>
   );
 }
-
-const useStyles = makeStyles((theme) => ({
-  "@global": {
-    a: {
-      textDecoration: "none",
-    },
-  },
-  icon: {
-    marginRight: theme.spacing(2),
-  },
-  heroContent: {
-    backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(8, 0, 6),
-  },
-  heroButtons: {
-    marginTop: theme.spacing(4),
-  },
-  cardGrid: {
-    paddingTop: theme.spacing(8),
-    paddingBottom: theme.spacing(8),
-  },
-  card: {
-    height: "100%",
-    display: "flex",
-    flexDirection: "column",
-  },
-  cardMedia: {
-    paddingTop: "56.25%", // 16:9
-  },
-  cardContent: {
-    flexGrow: 1,
-  },
-  footer: {
-    backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(6),
-  },
-}));
+// icon: { marginRight: 2 }
 
 const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 export default function Album() {
-  const classes = useStyles();
-
   return (
     <React.Fragment>
       <main>
         {/* Hero unit */}
-        <div className={classes.heroContent}>
+        <Box
+          sx={{
+            backgroundColor: "background.paper",
+            pt: 8,
+            pb: 6,
+            px: 0,
+          }}
+        >
           <Container maxWidth="sm">
             <Typography
               component="h1"
@@ -91,38 +60,44 @@ export default function Album() {
               contents, the creator, etc. Make it short and sweet, but not too
               short so folks don&apos;t simply skip over it entirely.
             </Typography>
-            <div className={classes.heroButtons}>
+            <Box sx={{ marginTop: 4 }}>
               <Grid container spacing={2} justifyContent="center">
                 <Grid item>
-                  <Link to="/pricing">
+                  <Link to="/pricing" style={{ textDecoration: "none" }}>
                     <Button variant="contained" color="primary">
                       Pricing
                     </Button>
                   </Link>
                 </Grid>
                 <Grid item>
-                  <Link to="/pricing">
+                  <Link to="/pricing" style={{ textDecoration: "none" }}>
                     <Button variant="outlined" color="primary">
                       Pricing
                     </Button>
                   </Link>
                 </Grid>
               </Grid>
-            </div>
+            </Box>
           </Container>
-        </div>
-        <Container className={classes.cardGrid} maxWidth="md">
+        </Box>
+        <Container sx={{ paddingTop: 8, paddingBottom: 8 }} maxWidth="md">
           {/* End hero unit */}
           <Grid container spacing={4}>
             {cards.map((card) => (
               <Grid item key={card} xs={12} sm={6} md={4}>
-                <Card className={classes.card}>
+                <Card
+                  sx={{
+                    height: "100%",
+                    display: "flex",
+                    flexDirection: "column",
+                  }}
+                >
                   <CardMedia
-                    className={classes.cardMedia}
+                    sx={{ paddingTop: "56.25%" }}
                     image="https://source.unsplash.com/random"
                     title="Image title"
                   />
-                  <CardContent className={classes.cardContent}>
+                  <CardContent sx={{ flexGrow: 1 }}>
                     <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>
@@ -146,7 +121,13 @@ export default function Album() {
         </Container>
       </main>
       {/* Footer */}
-      <footer className={classes.footer}>
+      <Box
+        component="footer"
+        sx={{
+          backgroundColor: "background.paper",
+          padding: 6,
+        }}
+      >
         <Typography variant="h6" align="center" gutterBottom>
           Footer
         </Typography>
@@ -159,7 +140,7 @@ export default function Album() {
           Something here to give the footer a purpose!
         </Typography>
         <Copyright />
-      </footer>
+      </Box>
       {/* End footer */}
     </React.Fragment>
   );

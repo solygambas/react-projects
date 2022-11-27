@@ -13,8 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: npm install --legacy-peer-deps
-      # @mui/styles is not compatible with React 18
+      - run: npm install
       - run: npm run build
       - uses: chrislennon/action-aws-cli@v1.1
       - run: aws s3 sync dist s3://${{ secrets.AWS_S3_BUCKET_NAME }}/container/latest

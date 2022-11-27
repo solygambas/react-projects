@@ -1,6 +1,5 @@
 import React from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import { StylesProvider } from "@mui/styles";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const theme = createTheme();
@@ -12,14 +11,12 @@ const App = () => {
   return (
     <div>
       <ThemeProvider theme={theme}>
-        <StylesProvider>
-          <BrowserRouter>
-            <Routes>
-              <Route exact path="/pricing" element={<Pricing />} />
-              <Route path="/" element={<Landing />} />
-            </Routes>
-          </BrowserRouter>
-        </StylesProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route exact path="/pricing" element={<Pricing />} />
+            <Route path="/" element={<Landing />} />
+          </Routes>
+        </BrowserRouter>
       </ThemeProvider>
     </div>
   );

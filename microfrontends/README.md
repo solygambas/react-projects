@@ -34,5 +34,6 @@ A project to learn to link React and Vue apps together.
 - assembling the App component and the Container.
 - integrating the Marketing App with the mount function.
 - delegating shared module selection.
+- implementing a CICD pipeline with GitHub Actions.
 
 Based on [Microfrontends with React: A Complete Developer's Guide](https://www.udemy.com/course/microfrontend-course/) by Stephen Grider (2021).
