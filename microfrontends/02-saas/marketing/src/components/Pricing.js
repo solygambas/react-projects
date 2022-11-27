@@ -10,7 +10,6 @@ import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
-import { grey } from "@mui/material/colors";
 import { Link as RouterLink } from "react-router-dom";
 
 function Copyright() {
@@ -159,7 +158,7 @@ export default function Pricing() {
                   action={tier.title === "Pro" ? <StarIcon /> : null}
                   sx={(theme) => ({
                     backgroundColor:
-                      theme.palette.mode === "light" ? grey[200] : grey[700],
+                      theme.palette.mode === "light" ? "grey.200" : "grey.700",
                   })}
                 />
                 <CardContent>
@@ -211,7 +210,8 @@ export default function Pricing() {
         maxWidth="md"
         component="footer"
         sx={{
-          borderTop: `1px solid ${grey[100]}`,
+          borderTop: 1,
+          borderTopColor: "grey.100",
           marginTop: 8,
           py: { xs: 3, md: 6 },
         }}
