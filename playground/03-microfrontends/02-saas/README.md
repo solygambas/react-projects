@@ -5,7 +5,7 @@ A project to learn to link React and Vue apps together.
 ## Features
 
 - choosing a architecture based on requirements.
-- setting up Webpack.
+- setting up Webpack for development and production.
 - creating and merging development config.
 - wiring up React.
 - assembling the App component and the Container.
