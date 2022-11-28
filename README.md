@@ -261,5 +261,8 @@ A project to learn to link React and Vue apps together.
 - integrating the Marketing App with the mount function.
 - delegating shared module selection.
 - implementing a CICD pipeline with GitHub Actions.
+- setting up a S3 bucket, configuring Cloudfront and deploying to AWS.
+- creating and assigning access keys.
+- automating cache invalidation.
 
 Based on [Microfrontends with React: A Complete Developer's Guide](https://www.udemy.com/course/microfrontend-course/) by Stephen Grider (2021).
