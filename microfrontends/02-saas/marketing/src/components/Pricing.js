@@ -25,16 +25,6 @@ function Copyright() {
   );
 }
 
-// toolbar: {
-//   flexWrap: "wrap",
-// },
-// toolbarTitle: {
-//   flexGrow: 1,
-// },
-// link: {
-//   margin: theme.spacing(1, 1.5),
-// },
-
 const tiers = [
   {
     title: "Free",
