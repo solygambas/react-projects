@@ -1,22 +1,24 @@
-import React, { useRef, useEffect } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import React, { useContext, useEffect, useRef } from "react";
+import { useLocation, UNSAFE_NavigationContext } from "react-router-dom";
 import { mount } from "marketing/MarketingApp";
 
 const MarketingApp = () => {
   const ref = useRef(null);
-  const navigate = useNavigate();
+  // doesn't work with react-router-dom 6.4
+  const { navigator } = useContext(UNSAFE_NavigationContext);
   const location = useLocation();
 
   useEffect(() => {
-    mount(ref.current, {
+    const { onParentNavigate } = mount(ref.current, {
       onNavigate: ({ location: { pathname: nextPathname } }) => {
         const { pathname } = location;
         if (pathname !== nextPathname) {
-          navigate(nextPathname);
+          navigator.push(nextPathname);
         }
       },
     });
-  });
+    navigator.listen(onParentNavigate);
+  }, []);
 
   return <div ref={ref} />;
 };
