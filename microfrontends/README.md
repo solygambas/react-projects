@@ -41,5 +41,6 @@ A project to learn to link React and Vue apps together.
 - handling CSS in microfrontends.
 - implementing multi-tier navigation.
 - using memory history and syncing history objects.
+- creating the Auth app, adding signin and signup forms.
 
 Based on [Microfrontends with React: A Complete Developer's Guide](https://www.udemy.com/course/microfrontend-course/) by Stephen Grider (2021).
