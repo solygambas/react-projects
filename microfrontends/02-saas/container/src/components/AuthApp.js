@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useRef } from "react";
 import { useLocation, UNSAFE_NavigationContext } from "react-router-dom";
 import { mount } from "auth/AuthApp";
 
-const AuthApp = () => {
+const AuthApp = ({ onSignIn }) => {
   const ref = useRef(null);
   // doesn't work with react-router-dom 6.4
   const { navigator } = useContext(UNSAFE_NavigationContext);
@@ -17,6 +17,7 @@ const AuthApp = () => {
           navigator.push(nextPathname);
         }
       },
+      onSignIn,
     });
     navigator.listen(onParentNavigate);
   }, []);

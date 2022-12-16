@@ -11,14 +11,20 @@ import SignUp from "./components/Signup";
 
 const theme = createTheme();
 
-const App = ({ history }) => {
+const App = ({ history, onSignIn }) => {
   return (
     <div>
       <ThemeProvider theme={theme}>
         <HistoryRouter history={history}>
           <Routes>
-            <Route path="/auth/signin" element={<SignIn />} />
-            <Route path="/auth/signup" element={<SignUp />} />
+            <Route
+              path="/auth/signin"
+              element={<SignIn onSignIn={onSignIn} />}
+            />
+            <Route
+              path="/auth/signup"
+              element={<SignUp onSignIn={onSignIn} />}
+            />
           </Routes>
         </HistoryRouter>
       </ThemeProvider>

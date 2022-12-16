@@ -5,15 +5,15 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import { Link as RouterLink } from "react-router-dom";
 
-export default function Header({ signedIn, onSignOut }) {
+export default function Header({ isSignedIn, onSignOut }) {
   const onClick = () => {
-    if (signedIn && onSignOut) {
+    if (isSignedIn && onSignOut) {
       onSignOut();
     }
   };
 
   return (
-    <React.Fragment>
+    <>
       <AppBar
         position="static"
         color="default"
@@ -42,13 +42,13 @@ export default function Header({ signedIn, onSignOut }) {
               mx: 1.5,
             }}
             component={RouterLink}
-            to={signedIn ? "/" : "/auth/signin"}
+            to={isSignedIn ? "/" : "/auth/signin"}
             onClick={onClick}
           >
-            {signedIn ? "Logout" : "Login"}
+            {isSignedIn ? "Logout" : "Login"}
           </Button>
         </Toolbar>
       </AppBar>
-    </React.Fragment>
+    </>
   );
 }

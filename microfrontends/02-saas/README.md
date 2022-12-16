@@ -21,5 +21,7 @@ A project to learn to link React and Vue apps together.
 - creating the Auth app, adding signin and signup forms.
 - integrating Auth into the Container.
 - adding a loading bar and lazily loading subapps.
+- communicating Auth changes.
+- allowing signout.
 
 Based on [Microfrontends with React: A Complete Developer's Guide](https://www.udemy.com/course/microfrontend-course/) by Stephen Grider (2021).
