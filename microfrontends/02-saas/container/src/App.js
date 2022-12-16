@@ -12,10 +12,14 @@ const App = () => {
       <Header />
       <Suspense fallback={<Progress />}>
         <Routes>
-          <Route path="/auth/signin" element={<AuthLazy />} />
-          <Route path="/auth/signup" element={<AuthLazy />} />
-          <Route path="/" element={<MarketingLazy />} />
-          <Route path="/pricing" element={<MarketingLazy />} />
+          <Route path="/auth/signin" key="auth_O" element={<AuthLazy />} />
+          <Route path="/auth/signup" key="auth_1" element={<AuthLazy />} />
+          <Route path="/" key="marketing_O" element={<MarketingLazy />} />
+          <Route
+            path="/pricing"
+            key="marketing_1"
+            element={<MarketingLazy />}
+          />
         </Routes>
       </Suspense>
     </BrowserRouter>
