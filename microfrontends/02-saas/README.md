@@ -4,7 +4,7 @@ A project to learn to link React and Vue apps together.
 
 ## Features
 
-- choosing a architecture based on requirements.
+- choosing an architecture based on requirements.
 - setting up Webpack for development and production.
 - creating and merging development config.
 - wiring up React.
@@ -24,5 +24,6 @@ A project to learn to link React and Vue apps together.
 - communicating Auth changes.
 - allowing signout.
 - setting up a Vue dashboard.
+- protecting access to the dashboard.
 
 Based on [Microfrontends with React: A Complete Developer's Guide](https://www.udemy.com/course/microfrontend-course/) by Stephen Grider (2021).
