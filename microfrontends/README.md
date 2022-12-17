@@ -25,6 +25,12 @@ A project to learn to link React and Vue apps together.
 
 [See 02-saas folder](02-saas)
 
+<p align="center">
+  <a href="02-saas">
+        <img src="02-saas/screenshot.png">
+  </a>
+</p>
+
 ### Features
 
 - choosing an architecture based on requirements.

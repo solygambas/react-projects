@@ -2,6 +2,10 @@
 
 A project to learn to link React and Vue apps together.
 
+<p align="center">
+        <img src="screenshot.png">
+</p>
+
 ## Features
 
 - choosing an architecture based on requirements.

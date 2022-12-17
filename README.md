@@ -251,9 +251,15 @@ A project to learn to link React and Vue apps together.
 
 [See microfrontends/02-saas folder](microfrontends/02-saas)
 
+<p align="center">
+  <a href="microfrontends/02-saas">
+        <img src="microfrontends/02-saas/screenshot.png">
+  </a>
+</p>
+
 ### Features
 
-- choosing a architecture based on requirements.
+- choosing an architecture based on requirements.
 - setting up Webpack for development and production.
 - creating and merging development config.
 - wiring up React.
@@ -268,5 +274,11 @@ A project to learn to link React and Vue apps together.
 - implementing multi-tier navigation.
 - using memory history and syncing history objects.
 - creating the Auth app, adding signin and signup forms.
+- integrating Auth into the Container.
+- adding a loading bar and lazily loading subapps.
+- communicating Auth changes.
+- allowing signout.
+- setting up a Vue dashboard.
+- protecting access to the dashboard.
 
 Based on [Microfrontends with React: A Complete Developer's Guide](https://www.udemy.com/course/microfrontend-course/) by Stephen Grider (2021).
