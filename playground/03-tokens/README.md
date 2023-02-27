@@ -11,5 +11,6 @@ This Tailwind app serves to test the delivery of design tokens from another repo
 - consuming design tokens exported by Style Dictionary.
 - setting up a React app with Tailwind.
 - converting the tokens to a Tailwind Theme.
+- using the Tailwind CSS classes in a React app
 
 [See Main Repo](https://github.com/solygambas/figma-plugins)
