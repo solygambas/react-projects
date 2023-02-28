@@ -25,4 +25,4 @@ module.exports = {
   plugins: [],
 };
 
-console.log(colors);
+// console.log(colors);
