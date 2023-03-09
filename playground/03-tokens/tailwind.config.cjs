@@ -10,8 +10,8 @@ const formatKebabCase = (string) =>
 
 const tokens = require("./tokens/js/_variables");
 const colors = Object.fromEntries(
-  Object.values(tokens.color["light part"]).map(({ attributes, value }) => [
-    formatKebabCase(attributes.item),
+  Object.values(tokens.Light).map(({ attributes, value }) => [
+    formatKebabCase(attributes.type),
     value,
   ])
 );
